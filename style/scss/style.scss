@@ -1,0 +1,86 @@
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities";
+@import "compass/layout";
+@import "zen";// Import Zen Grids with this statement.
+$zen-column-count: 7; // Set the total number of columns in the grid.
+$zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each side of each column.
+#page {
+ max-width:1120px;
+}
+
+.container {
+ @include zen-grid-container; // Apply this mixin to the container.
+
+}
+.aside1 {
+ @include zen-grid-item(2, 1); // Apply this mixin for each grid item in the container.
+ background: #FCC;
+}
+.content {
+ @include zen-grid-item(3, 3); // Make this grid item span 4 columns. // Position this grid item in the 3rd column.
+ background: #CFC;
+}
+.aside2 {
+ @include zen-grid-item(2, 6);
+ background: #CCF;
+ min-width:300px;
+}
+.footer1 {
+ @include zen-clear(); // Apply this mixin to start a new row.
+ @include zen-grid-item(3, 5);
+ background: #FFC;
+}
+.footer2 {
+ @include zen-grid-item(4, 1);
+ background: #CFF;
+}
+/* -------------------------------------------------- */
+/* talltabs-blue */
+/* -------------------------------------------------- */
+.menu-main-container {
+    clear:left;
+    float:left;
+    padding:0;
+    border-top:6px solid #336699;
+    width:100%;
+    overflow:hidden;
+    font-family:Georgia, serif;
+    height: 65px;
+}
+.menu-main-container ul {
+    float:left;
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:relative;
+    left:50%;
+    text-align:center;
+}
+.menu-main-container ul li {
+    display:block;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    right:50%;
+}
+.menu-main-container ul li a {
+    display:block;
+    float:left;
+    margin:0 1px 0 0;
+    padding:30px 10px 6px 10px;
+    background:#336699;
+    text-decoration:none;
+    color:#fff;
+}
+
+.main-navigation li.current-menu-item a,
+.menu-main-container ul li a:hover {
+    padding:35px 10px 6px 10px;
+}
+.menu-main-container ul li.active a,
+.menu-main-container ul li.active a:hover {
+    padding:40px 10px 6px 10px;
+}
