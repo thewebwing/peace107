@@ -1,1 +1,216 @@
-#page{max-width:1120px}.container{*position:relative;*zoom:1}.container:before,.container:after{content:"";display:table}.container:after{clear:both}.aside1{float:left;width:28.571%;margin-left:0%;margin-right:-28.571%;padding-left:5px;padding-right:5px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word;_display:inline;_overflow:hidden;_overflow-y:visible;background:#FCC}.content{float:left;width:42.857%;margin-left:28.571%;margin-right:-71.429%;padding-left:5px;padding-right:5px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word;_display:inline;_overflow:hidden;_overflow-y:visible;background:#CFC}.aside2{float:left;width:28.571%;margin-left:71.429%;margin-right:-100%;padding-left:5px;padding-right:5px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word;_display:inline;_overflow:hidden;_overflow-y:visible;background:#CCF;min-width:300px}.footer1{clear:left;float:left;width:42.857%;margin-left:57.143%;margin-right:-100%;padding-left:5px;padding-right:5px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word;_display:inline;_overflow:hidden;_overflow-y:visible;background:#FFC}.footer2{float:left;width:57.143%;margin-left:0%;margin-right:-57.143%;padding-left:5px;padding-right:5px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word;_display:inline;_overflow:hidden;_overflow-y:visible;background:#CFF}.menu-main-container{clear:left;float:left;padding:0;border-top:6px solid #336699;width:100%;overflow:hidden;font-family:Georgia, serif;height:65px}.menu-main-container ul{float:left;margin:0;padding:0;list-style:none;position:relative;left:50%;text-align:center}.menu-main-container ul li{display:block;float:left;list-style:none;margin:0;padding:0;position:relative;right:50%}.menu-main-container ul li a{display:block;float:left;margin:0 1px 0 0;padding:30px 10px 6px 10px;background:#336699;text-decoration:none;color:#fff}.main-navigation li.current-menu-item a,.menu-main-container ul li a:hover{padding:35px 10px 6px 10px}.menu-main-container ul li.active a,.menu-main-container ul li.active a:hover{padding:40px 10px 6px 10px}
+/* line 8, scss/style.scss */
+#page, .container, .aside1, .content, .aside2, .footer1, .footer2 {
+  float: none;
+  width: 100%;
+}
+
+/* line 12, scss/style.scss */
+.content {
+  clear: both;
+  background: #CFC;
+}
+
+/* line 16, scss/style.scss */
+.aside1 {
+  background: #FCC;
+}
+
+/* line 19, scss/style.scss */
+.aside2 {
+  background: #CCF;
+}
+
+/* line 22, scss/style.scss */
+.footer1 {
+  background: #FFC;
+}
+
+/* line 25, scss/style.scss */
+.footer2 {
+  background: #CFF;
+}
+
+/* -------------------------------------------------- */
+/* talltabs-blue */
+/* -------------------------------------------------- */
+/* line 32, scss/style.scss */
+.menu-main-container {
+  clear: left;
+  float: left;
+  padding: 0;
+  border-top: 6px solid #336699;
+  width: 100%;
+  overflow: hidden;
+  font-family: Georgia, serif;
+  height: 45px;
+}
+
+/* line 42, scss/style.scss */
+.menu-main-container ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+
+/* line 51, scss/style.scss */
+.menu-main-container ul li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 50%;
+}
+
+/* line 60, scss/style.scss */
+.menu-main-container ul li a {
+  display: block;
+  float: left;
+  margin: 0 1px 0 0;
+  padding: 10px 10px 6px 10px;
+  background: #336699;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 71, scss/style.scss */
+.main-navigation li.current-menu-item a,
+.menu-main-container ul li a:hover {
+  padding: 15px 10px 6px 10px;
+}
+
+/* line 75, scss/style.scss */
+.menu-main-container ul li.active a,
+.menu-main-container ul li.active a:hover {
+  padding: 40px 10px 6px 10px;
+}
+
+@media only screen and (min-width: 500px ) and ( max-width: 800px ) {
+  /* line 80, scss/style.scss */
+  #page {
+    width: 98%;
+  }
+}
+@media only screen and (min-width: 801px ) {
+  /* line 86, scss/style.scss */
+  #page {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  /* line 90, scss/style.scss */
+  .container {
+    *position: relative;
+    *zoom: 1;
+  }
+  /* line 52, scss/zen/_grids.scss */
+  .container:before, .container:after {
+    content: "";
+    display: table;
+  }
+  /* line 56, scss/zen/_grids.scss */
+  .container:after {
+    clear: both;
+  }
+
+  /* line 93, scss/style.scss */
+  .aside1 {
+    float: left;
+    width: 12.5%;
+    margin-left: 0%;
+    margin-right: -12.5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    background: #FCC;
+  }
+
+  /* line 97, scss/style.scss */
+  .content {
+    float: left;
+    width: 50%;
+    margin-left: 12.5%;
+    margin-right: -62.5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    background: #CFC;
+  }
+
+  /* line 101, scss/style.scss */
+  .aside2 {
+    float: left;
+    width: 37.5%;
+    margin-left: 62.5%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    background: #CCF;
+  }
+
+  /* line 105, scss/style.scss */
+  .footer1 {
+    clear: left;
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    background: #FFC;
+  }
+
+  /* line 110, scss/style.scss */
+  .footer2 {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    background: #CFF;
+  }
+}

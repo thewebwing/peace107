@@ -3,38 +3,29 @@
 @import "compass/utilities";
 @import "compass/layout";
 @import "zen";// Import Zen Grids with this statement.
-$zen-column-count: 7; // Set the total number of columns in the grid.
+$zen-column-count: 16; // Set the total number of columns in the grid.
 $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each side of each column.
-#page {
- max-width:1120px;
-}
-
-.container {
- @include zen-grid-container; // Apply this mixin to the container.
-
-}
-.aside1 {
- @include zen-grid-item(2, 1); // Apply this mixin for each grid item in the container.
- background: #FCC;
+#page, .container, .aside1, .content, .aside2, .footer1, .footer2 {
+    float:none;
+    width:100%;
 }
 .content {
- @include zen-grid-item(3, 3); // Make this grid item span 4 columns. // Position this grid item in the 3rd column.
- background: #CFC;
+    clear:both;
+    background: #CFC;
+}
+.aside1 {
+    background: #FCC;
 }
 .aside2 {
- @include zen-grid-item(2, 6);
- background: #CCF;
- min-width:300px;
+    background: #CCF;
 }
 .footer1 {
- @include zen-clear(); // Apply this mixin to start a new row.
- @include zen-grid-item(3, 5);
- background: #FFC;
+    background: #FFC;
 }
 .footer2 {
- @include zen-grid-item(4, 1);
- background: #CFF;
+    background: #CFF;
 }
+
 /* -------------------------------------------------- */
 /* talltabs-blue */
 /* -------------------------------------------------- */
@@ -46,7 +37,7 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     width:100%;
     overflow:hidden;
     font-family:Georgia, serif;
-    height: 65px;
+    height: 45px;
 }
 .menu-main-container ul {
     float:left;
@@ -70,7 +61,7 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     display:block;
     float:left;
     margin:0 1px 0 0;
-    padding:30px 10px 6px 10px;
+    padding:10px 10px 6px 10px;
     background:#336699;
     text-decoration:none;
     color:#fff;
@@ -78,9 +69,46 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
 
 .main-navigation li.current-menu-item a,
 .menu-main-container ul li a:hover {
-    padding:35px 10px 6px 10px;
+    padding:15px 10px 6px 10px;
 }
 .menu-main-container ul li.active a,
 .menu-main-container ul li.active a:hover {
     padding:40px 10px 6px 10px;
+}
+
+@media only screen and (min-width: 500px ) and ( max-width: 800px )    {
+    #page {
+        width: 98%;
+    }
+    
+}
+@media only screen and (min-width: 801px ) {
+    #page {
+        width:960px;
+        margin:0 auto;
+    }
+    .container {
+        @include zen-grid-container; // Apply this mixin to the container.
+    }
+    .aside1 {
+        @include zen-grid-item(2, 1); // Apply this mixin for each grid item in the container.
+        background: #FCC;
+    }
+    .content {
+        @include zen-grid-item(8, 3); // Make this grid item span 8 columns. // Position this grid item in the 4th column.
+        background: #CFC;
+    }
+    .aside2 {
+        @include zen-grid-item(6, 11);
+        background: #CCF;
+    }
+    .footer1 {
+        @include zen-clear(); // Apply this mixin to start a new row.
+        @include zen-grid-item(8, 9);
+        background: #FFC;
+    }
+    .footer2 {
+        @include zen-grid-item(8, 1);
+        background: #CFF;
+    }
 }
