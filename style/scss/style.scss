@@ -9,7 +9,7 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     float:none;
     width:100%;
 }
-.content {
+#content {
     clear:both;
     background: #CFC;
 }
@@ -25,7 +25,20 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
 .footer2 {
     background: #CFF;
 }
-
+.ad {
+    border:2px solid #888;
+    padding:2px;
+    margin:0 auto;
+    box-sizing:content-box;
+}
+.leaderboard {
+    width:728px;
+    height:90px;
+}
+.medium-rectangle {
+    width:300px;
+    height:250px;
+}
 /* -------------------------------------------------- */
 /* talltabs-blue */
 /* -------------------------------------------------- */
@@ -76,30 +89,57 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     padding:40px 10px 6px 10px;
 }
 
-@media only screen and (min-width: 500px ) and ( max-width: 800px )    {
+@media only screen and (min-width: 725px ) and ( max-width: 825px )    {
     #page {
-        width: 98%;
-    }
-    
-}
-@media only screen and (min-width: 801px ) {
-    #page {
-        width:960px;
         margin:0 auto;
     }
     .container {
         @include zen-grid-container; // Apply this mixin to the container.
     }
+    #content {
+        @include zen-grid-item(9, 1); // Make this grid item span 8 columns. // Position this grid item in the 4th column.
+        background: #CFC;
+    }
     .aside1 {
-        @include zen-grid-item(2, 1); // Apply this mixin for each grid item in the container.
+        @include zen-clear(right);
+        @include zen-grid-item(7, 1, right); // Apply this mixin for each grid item in the container.
         background: #FCC;
     }
-    .content {
+    .aside2 {
+        @include zen-clear(right);
+        @include zen-grid-item(7, 1, right);
+        background: #CCF;
+    }
+    .footer1 {
+        @include zen-clear(); // Apply this mixin to start a new row.
+        @include zen-grid-item(8, 9);
+        background: #FFC;
+    }
+    .footer2 {
+        @include zen-grid-item(8, 1);
+        background: #CFF;
+    }
+    
+}
+@media only screen and (min-width: 825px ) {
+    #page {
+        min-width:700px;
+        max-width:1200px;
+        margin:0 auto;
+    }
+    .container {
+        @include zen-grid-container; // Apply this mixin to the container.
+    }
+    #content {
         @include zen-grid-item(8, 3); // Make this grid item span 8 columns. // Position this grid item in the 4th column.
         background: #CFC;
     }
-    .aside2 {
+    .aside1 {
         @include zen-grid-item(6, 11);
+        background: #FCC;
+    }
+    .aside2 {
+        @include zen-grid-item(2, 1); // Apply this mixin for each grid item in the container.
         background: #CCF;
     }
     .footer1 {
