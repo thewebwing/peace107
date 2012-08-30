@@ -14,22 +14,46 @@
 
 get_header(); ?>
 
-<div class="container">
-  <article class="content">
-    Tha main content. We like semantic HTML ordering.
-  </article>
-  <aside class="aside1">
-    An aside.
-  </aside>
-  <aside class="aside2">
-    Another aside.
-  </aside>
-  <footer class="footer1">
-    A footer.
-  </footer>
-  <footer class="footer2">
-    Another footer.
-  </footer>
-</div>
+    <div id="primary" class="site-content container">
+        <div id="content" role="main">
 
+        <?php if ( have_posts() ) : ?>
+
+            <?php peace107_content_nav( 'nav-above' ); ?>
+
+            <?php /* Start the Loop */ ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+
+                <?php
+                    /* Include the Post-Format-specific template for the content.
+                     * If you want to overload this in a child theme then include a file
+                     * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                     */
+                    get_template_part( 'content', get_post_format() );
+                ?>
+
+            <?php endwhile; ?>
+
+            <?php peace107_content_nav( 'nav-below' ); ?>
+
+        <?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
+
+            <?php get_template_part( 'no-results', 'index' ); ?>
+
+        <?php endif; ?>
+
+        </div><!-- #content -->
+        <aside class="aside1">
+            <div class="ad medium-rectangle"><a href=""><img src="" width="300" height="250"></a></div>
+        </aside>
+        <aside class="aside2">
+            An aside.
+        </aside>
+        <footer class="footer1">
+            A footer.
+        </footer>
+        <footer class="footer2">
+            Another footer.
+        </footer>
+    </div><!-- #primary .site-content -->
 <?php get_footer(); ?>
