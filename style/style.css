@@ -1,15 +1,21 @@
 /* line 8, scss/style.scss */
+body {
+  background-color: #ddd;
+}
+
+/* line 9, scss/style.scss */
 #page, .container, .aside1, .content, .aside2, .footer1, .footer2 {
   float: none;
   width: 100%;
 }
 
-/* line 12, scss/style.scss */
+/* line 13, scss/style.scss */
 #page {
   min-width: 740px;
+  background-color: #fff;
 }
 
-/* line 13, scss/style.scss */
+/* line 14, scss/style.scss */
 #masthead {
   background: url("images/header-bg.jpg") white center center no-repeat;
 }
@@ -17,27 +23,27 @@
 /* Commented out to disable mobile sizing */
 /*#content {
     clear:both;
-    background: #CFC;
+    /*background: #CFC; */
 }
 .aside1 {
-    background: #FCC;
+    /*background: #FCC; */
 }
 .aside2 {
-    background: #CCF;
+    /*background: #CCF; */
 }
 .footer1 {
-    background: #FFC;
+    /*background: #FFC; */
 }
 .footer2 {
-    background: #CFF;
+    /*background: #CFF; */
 }*/
 /* repeat of 740 - 825 */
-/* line 36, scss/style.scss */
+/* line 37, scss/style.scss */
 #page {
   margin: 0 auto;
 }
 
-/* line 39, scss/style.scss */
+/* line 40, scss/style.scss */
 .container {
   *position: relative;
   *zoom: 1;
@@ -52,12 +58,12 @@
   clear: both;
 }
 
-/* line 42, scss/style.scss */
+/* line 43, scss/style.scss */
 #primary {
   clear: both;
 }
 
-/* line 43, scss/style.scss */
+/* line 44, scss/style.scss */
 #content {
   float: left;
   width: 56.25%;
@@ -73,10 +79,9 @@
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  background: #CFC;
 }
 
-/* line 47, scss/style.scss */
+/* line 48, scss/style.scss */
 .aside1 {
   clear: right;
   float: right;
@@ -93,10 +98,9 @@
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  background: #FCC;
 }
 
-/* line 52, scss/style.scss */
+/* line 53, scss/style.scss */
 .aside2 {
   clear: right;
   float: right;
@@ -113,10 +117,9 @@
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  background: #CCF;
 }
 
-/* line 57, scss/style.scss */
+/* line 58, scss/style.scss */
 .footer1 {
   clear: left;
   float: left;
@@ -133,10 +136,9 @@
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  background: #FFC;
 }
 
-/* line 62, scss/style.scss */
+/* line 63, scss/style.scss */
 .footer2 {
   float: left;
   width: 50%;
@@ -152,10 +154,9 @@
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  background: #CFF;
 }
 
-/* line 68, scss/style.scss */
+/* line 69, scss/style.scss */
 .ad {
   border: 2px solid #888;
   padding: 2px;
@@ -163,7 +164,7 @@
   box-sizing: content-box;
 }
 
-/* line 74, scss/style.scss */
+/* line 75, scss/style.scss */
 .leaderboard {
   width: 728px;
   height: 90px;
@@ -171,7 +172,7 @@
   margin-bottom: 10px;
 }
 
-/* line 80, scss/style.scss */
+/* line 81, scss/style.scss */
 .medium-rectangle {
   width: 300px;
   height: 250px;
@@ -180,7 +181,7 @@
 /* -------------------------------------------------- */
 /* talltabs-blue */
 /* -------------------------------------------------- */
-/* line 87, scss/style.scss */
+/* line 88, scss/style.scss */
 .menu-main-container {
   clear: left;
   float: left;
@@ -192,7 +193,7 @@
   height: 45px;
 }
 
-/* line 97, scss/style.scss */
+/* line 98, scss/style.scss */
 .menu-main-container ul {
   float: left;
   margin: 0;
@@ -203,7 +204,7 @@
   text-align: center;
 }
 
-/* line 106, scss/style.scss */
+/* line 107, scss/style.scss */
 .menu-main-container ul li {
   display: block;
   float: left;
@@ -214,7 +215,7 @@
   right: 50%;
 }
 
-/* line 115, scss/style.scss */
+/* line 116, scss/style.scss */
 .menu-main-container ul li a {
   display: block;
   float: left;
@@ -225,52 +226,52 @@
   color: #fff;
 }
 
-/* line 126, scss/style.scss */
+/* line 127, scss/style.scss */
 .main-navigation li.current-menu-item a,
 .menu-main-container ul li a:hover {
   padding: 15px 10px 6px 10px;
 }
 
-/* line 130, scss/style.scss */
+/* line 131, scss/style.scss */
 .menu-main-container ul li.active a,
 .menu-main-container ul li.active a:hover {
   padding: 40px 10px 6px 10px;
 }
 
 /* Orbit */
-/* line 135, scss/style.scss */
+/* line 136, scss/style.scss */
 .orbit-wrapper div.orbit-caption {
   font-size: 1.8em;
 }
 
-/* line 136, scss/style.scss */
+/* line 137, scss/style.scss */
 #featured {
-  background: url(foundation3/images/foundation/orbit/loading.gif) center center #f4f4f4 no-repeat;
+  background: url(../libs/foundation3/images/foundation/orbit/loading.gif) center center #f4f4f4 no-repeat;
   height: 300px;
 }
 
-/* line 137, scss/style.scss */
+/* line 138, scss/style.scss */
 #featured img {
   display: none;
 }
 
-/* line 139, scss/style.scss */
+/* line 140, scss/style.scss */
 #featured.orbit {
   background: none;
 }
 
-/* line 140, scss/style.scss */
+/* line 141, scss/style.scss */
 #featured.orbit img {
   display: block;
 }
 
 @media only screen and (min-width: 740px ) and ( max-width: 825px ) {
-  /* line 143, scss/style.scss */
+  /* line 144, scss/style.scss */
   #page {
     margin: 0 auto;
   }
 
-  /* line 146, scss/style.scss */
+  /* line 147, scss/style.scss */
   .container {
     *position: relative;
     *zoom: 1;
@@ -285,7 +286,7 @@
     clear: both;
   }
 
-  /* line 149, scss/style.scss */
+  /* line 150, scss/style.scss */
   #content {
     float: left;
     width: 56.25%;
@@ -301,10 +302,9 @@
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
-    background: #CFC;
   }
 
-  /* line 153, scss/style.scss */
+  /* line 154, scss/style.scss */
   .aside1 {
     clear: right;
     float: right;
@@ -321,10 +321,9 @@
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
-    background: #FCC;
   }
 
-  /* line 158, scss/style.scss */
+  /* line 159, scss/style.scss */
   .aside2 {
     clear: right;
     float: right;
@@ -341,10 +340,10 @@
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
-    background: #CCF;
+    border-left: 2px solid #888;
   }
 
-  /* line 163, scss/style.scss */
+  /* line 165, scss/style.scss */
   .footer1 {
     clear: left;
     float: left;
@@ -361,10 +360,9 @@
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
-    background: #FFC;
   }
 
-  /* line 168, scss/style.scss */
+  /* line 170, scss/style.scss */
   .footer2 {
     float: left;
     width: 50%;
@@ -384,14 +382,14 @@
   }
 }
 @media only screen and (min-width: 825px ) {
-  /* line 175, scss/style.scss */
+  /* line 177, scss/style.scss */
   #page {
     min-width: 700px;
     max-width: 1120px;
     margin: 0 auto;
   }
 
-  /* line 183, scss/style.scss */
+  /* line 185, scss/style.scss */
   .container {
     *position: relative;
     *zoom: 1;
@@ -406,7 +404,7 @@
     clear: both;
   }
 
-  /* line 186, scss/style.scss */
+  /* line 188, scss/style.scss */
   #content {
     float: left;
     width: 50%;
@@ -422,10 +420,9 @@
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
-    background: #CFC;
   }
 
-  /* line 190, scss/style.scss */
+  /* line 192, scss/style.scss */
   .aside1 {
     float: left;
     width: 31.25%;
@@ -441,10 +438,9 @@
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
-    background: #FCC;
   }
 
-  /* line 194, scss/style.scss */
+  /* line 196, scss/style.scss */
   .aside2 {
     float: left;
     width: 18.75%;
@@ -460,10 +456,10 @@
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
-    background: #CCF;
+    border-right: 2px solid #888;
   }
 
-  /* line 198, scss/style.scss */
+  /* line 201, scss/style.scss */
   .footer1 {
     clear: left;
     float: left;
@@ -480,10 +476,9 @@
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
-    background: #FFC;
   }
 
-  /* line 203, scss/style.scss */
+  /* line 206, scss/style.scss */
   .footer2 {
     float: left;
     width: 50%;
@@ -499,6 +494,5 @@
     _display: inline;
     _overflow: hidden;
     _overflow-y: visible;
-    background: #CFF;
   }
 }

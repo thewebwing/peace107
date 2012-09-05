@@ -5,11 +5,12 @@
 @import "zen";// Import Zen Grids with this statement.
 $zen-column-count: 16; // Set the total number of columns in the grid.
 $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each side of each column.
+body { background-color:#ddd; }
 #page, .container, .aside1, .content, .aside2, .footer1, .footer2 {
     float:none;
     width:100%;
 }
-#page { min-width:740px; }
+#page { min-width:740px; background-color:#fff;}
 #masthead {
     background: url('images/header-bg.jpg') #fff center center no-repeat;
 }
@@ -17,19 +18,19 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
 /* Commented out to disable mobile sizing */
 /*#content {
     clear:both;
-    background: #CFC;
+    //background: #CFC;
 }
 .aside1 {
-    background: #FCC;
+    //background: #FCC;
 }
 .aside2 {
-    background: #CCF;
+    //background: #CCF;
 }
 .footer1 {
-    background: #FFC;
+    //background: #FFC;
 }
 .footer2 {
-    background: #CFF;
+    //background: #CFF;
 }*/
 
 /* repeat of 740 - 825 */
@@ -42,26 +43,26 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     #primary { clear:both; }
     #content {
         @include zen-grid-item(9, 1); // Make this grid item span 8 columns. // Position this grid item in the 4th column.
-        background: #CFC;
+        //background: #CFC;
     }
     .aside1 {
         @include zen-clear(right);
         @include zen-grid-item(7, 1, right); // Apply this mixin for each grid item in the container.
-        background: #FCC;
+        //background: #FCC;
     }
     .aside2 {
         @include zen-clear(right);
         @include zen-grid-item(7, 1, right);
-        background: #CCF;
+        //background: #CCF;
     }
     .footer1 {
         @include zen-clear(); // Apply this mixin to start a new row.
         @include zen-grid-item(8, 9);
-        background: #FFC;
+        //background: #FFC;
     }
     .footer2 {
         @include zen-grid-item(8, 1);
-        background: #CFF;
+       //background: #CFF;
     }
 
 
@@ -133,7 +134,7 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
 
 /* Orbit */
 .orbit-wrapper div.orbit-caption {font-size: 1.8em;}
-#featured { background: url(foundation3/images/foundation/orbit/loading.gif) center center #f4f4f4 no-repeat; height: 300px; }
+#featured { background: url(../libs/foundation3/images/foundation/orbit/loading.gif) center center #f4f4f4 no-repeat; height: 300px; }
 #featured img { display: none; }
 
 #featured.orbit { background: none; }
@@ -148,22 +149,23 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     }
     #content {
         @include zen-grid-item(9, 1); // Make this grid item span 8 columns. // Position this grid item in the 4th column.
-        background: #CFC;
+        //background: #CFC;
     }
     .aside1 {
         @include zen-clear(right);
         @include zen-grid-item(7, 1, right); // Apply this mixin for each grid item in the container.
-        background: #FCC;
+        //background: #FCC;
     }
     .aside2 {
         @include zen-clear(right);
         @include zen-grid-item(7, 1, right);
-        background: #CCF;
+        //background: #CCF;
+        border-left:2px solid #888;
     }
     .footer1 {
         @include zen-clear(); // Apply this mixin to start a new row.
         @include zen-grid-item(8, 9);
-        background: #FFC;
+        //background: #FFC;
     }
     .footer2 {
         @include zen-grid-item(8, 1);
@@ -185,23 +187,24 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     }
     #content {
         @include zen-grid-item(8, 4); // Make this grid item span 8 columns. // Position this grid item in the 4th column.
-        background: #CFC;
+        //background: #CFC;
     }
     .aside1 {
         @include zen-grid-item(5, 12);
-        background: #FCC;
+        //background: #FCC;
     }
     .aside2 {
         @include zen-grid-item(3, 1); // Apply this mixin for each grid item in the container.
-        background: #CCF;
+        //background: #CCF;
+        border-right:2px solid #888;
     }
     .footer1 {
         @include zen-clear(); // Apply this mixin to start a new row.
         @include zen-grid-item(8, 9);
-        background: #FFC;
+        //background: #FFC;
     }
     .footer2 {
         @include zen-grid-item(8, 1);
-        background: #CFF;
+        //background: #CFF;
     }
 }
