@@ -14,7 +14,7 @@ body { background-color:#ddd; }
 #masthead {
     background: url('images/header-bg.jpg') #fff center center no-repeat;
 }
-
+footer#colophon { clear:both; }
 /* Commented out to disable mobile sizing */
 /*#content {
     clear:both;
@@ -140,7 +140,8 @@ body { background-color:#ddd; }
 #featured.orbit { background: none; }
 #featured.orbit img { display: block; }
 
-@media only screen and (min-width: 740px ) and ( max-width: 825px )    {
+@media only screen and (min-width: 625px ) and ( max-width: 1000px )    {
+    .aside1, .aside2 { border-left:1px solid #ccc; }
     #page {
         margin:0 auto;
     }
@@ -160,7 +161,6 @@ body { background-color:#ddd; }
         @include zen-clear(right);
         @include zen-grid-item(7, 1, right);
         //background: #CCF;
-        border-left:2px solid #888;
     }
     .footer1 {
         @include zen-clear(); // Apply this mixin to start a new row.
@@ -169,14 +169,13 @@ body { background-color:#ddd; }
     }
     .footer2 {
         @include zen-grid-item(8, 1);
-        background: #CFF;
+        //background: #CFF;
     }
     
 }
-@media only screen and (min-width: 825px ) {
+@media only screen and (min-width: 1000px ) {
     #page {
-        min-width:740px;
-        max-width:1120px;
+        max-width:1200px;
         margin:0 auto;
     }
     #masthead {
@@ -196,7 +195,6 @@ body { background-color:#ddd; }
     .aside2 {
         @include zen-grid-item(3, 1); // Apply this mixin for each grid item in the container.
         //background: #CCF;
-        border-right:2px solid #888;
     }
     .footer1 {
         @include zen-clear(); // Apply this mixin to start a new row.
