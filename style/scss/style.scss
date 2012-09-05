@@ -9,7 +9,13 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     float:none;
     width:100%;
 }
-#content {
+#page { min-width:740px; }
+#masthead {
+    background: url('images/header-bg.jpg') #fff center center no-repeat;
+}
+
+/* Commented out to disable mobile sizing */
+/*#content {
     clear:both;
     background: #CFC;
 }
@@ -24,7 +30,41 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
 }
 .footer2 {
     background: #CFF;
-}
+}*/
+
+/* repeat of 740 - 825 */
+    #page {
+        margin:0 auto;
+    }
+    .container {
+        @include zen-grid-container; // Apply this mixin to the container.
+    }
+    #primary { clear:both; }
+    #content {
+        @include zen-grid-item(9, 1); // Make this grid item span 8 columns. // Position this grid item in the 4th column.
+        background: #CFC;
+    }
+    .aside1 {
+        @include zen-clear(right);
+        @include zen-grid-item(7, 1, right); // Apply this mixin for each grid item in the container.
+        background: #FCC;
+    }
+    .aside2 {
+        @include zen-clear(right);
+        @include zen-grid-item(7, 1, right);
+        background: #CCF;
+    }
+    .footer1 {
+        @include zen-clear(); // Apply this mixin to start a new row.
+        @include zen-grid-item(8, 9);
+        background: #FFC;
+    }
+    .footer2 {
+        @include zen-grid-item(8, 1);
+        background: #CFF;
+    }
+
+
 .ad {
     border:2px solid #888;
     padding:2px;
@@ -34,6 +74,8 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
 .leaderboard {
     width:728px;
     height:90px;
+    margin-top:5px;
+    margin-bottom:10px;
 }
 .medium-rectangle {
     width:300px;
@@ -46,7 +88,7 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     clear:left;
     float:left;
     padding:0;
-    border-top:6px solid #336699;
+    border-top:6px solid #1f3d72;
     width:100%;
     overflow:hidden;
     font-family:Georgia, serif;
@@ -75,7 +117,7 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     float:left;
     margin:0 1px 0 0;
     padding:10px 10px 6px 10px;
-    background:#336699;
+    background:#1f3d72;
     text-decoration:none;
     color:#fff;
 }
@@ -89,7 +131,15 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
     padding:40px 10px 6px 10px;
 }
 
-@media only screen and (min-width: 725px ) and ( max-width: 825px )    {
+/* Orbit */
+.orbit-wrapper div.orbit-caption {font-size: 1.8em;}
+#featured { background: url(foundation3/images/foundation/orbit/loading.gif) center center #f4f4f4 no-repeat; height: 300px; }
+#featured img { display: none; }
+
+#featured.orbit { background: none; }
+#featured.orbit img { display: block; }
+
+@media only screen and (min-width: 740px ) and ( max-width: 825px )    {
     #page {
         margin:0 auto;
     }
@@ -124,22 +174,25 @@ $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each s
 @media only screen and (min-width: 825px ) {
     #page {
         min-width:700px;
-        max-width:1200px;
+        max-width:1120px;
         margin:0 auto;
+    }
+    #masthead {
+        //padding:.5em 1em;
     }
     .container {
         @include zen-grid-container; // Apply this mixin to the container.
     }
     #content {
-        @include zen-grid-item(8, 3); // Make this grid item span 8 columns. // Position this grid item in the 4th column.
+        @include zen-grid-item(8, 4); // Make this grid item span 8 columns. // Position this grid item in the 4th column.
         background: #CFC;
     }
     .aside1 {
-        @include zen-grid-item(6, 11);
+        @include zen-grid-item(5, 12);
         background: #FCC;
     }
     .aside2 {
-        @include zen-grid-item(2, 1); // Apply this mixin for each grid item in the container.
+        @include zen-grid-item(3, 1); // Apply this mixin for each grid item in the container.
         background: #CCF;
     }
     .footer1 {
