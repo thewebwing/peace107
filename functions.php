@@ -80,14 +80,22 @@ add_action( 'after_setup_theme', 'peace107_setup' );
  * @since Peace 107 1.0
  */
 function peace107_widgets_init() {
-	register_sidebar( array(
-		'name' => __( 'Sidebar', 'peace107' ),
-		'id' => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
+    register_sidebar( array(
+        'name' => __( 'Primary' ),
+        'id' => 'primary-sidebar',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => "</aside>",
+        'before_title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
+    ) );
+    register_sidebar( array(
+        'name' => __( 'Secondary' ),
+        'id' => 'secondary-sidebar',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => "</aside>",
+        'before_title' => '<h1 class="widget-title">',
+        'after_title' => '</h1>',
+    ) );
 }
 add_action( 'widgets_init', 'peace107_widgets_init' );
 
