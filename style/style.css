@@ -384,7 +384,7 @@ body {
 @media only screen and (min-width: 825px ) {
   /* line 177, scss/style.scss */
   #page {
-    min-width: 700px;
+    min-width: 740px;
     max-width: 1120px;
     margin: 0 auto;
   }
