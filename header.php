@@ -46,7 +46,7 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
     <?php if(!wp_is_mobile()){ ?>
-        <div class="ad leaderboard"><a href=""><img src="" width="728" height="90"></a></div>
+        <div class="ad leaderboard"><a href=""><img src="http://brazosvalleybride.com/assets/728x90.gif" width="728" height="90"></a></div>
     <?php } ?>
 	<header id="masthead" class="site-header" role="banner">
         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
