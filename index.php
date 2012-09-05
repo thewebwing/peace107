@@ -46,7 +46,6 @@ get_header(); ?>
         </div><!-- #content -->
         <aside class="aside1">
             <?php dynamic_sidebar('Primary'); ?>
-            <div class="ad medium-rectangle"><a href=""><img src="http://brazosvalleybride.com/assets/300x250.gif" width="300" height="250"></a></div>
         </aside>
         <aside class="aside2">
             <?php dynamic_sidebar('Secondary'); ?>
