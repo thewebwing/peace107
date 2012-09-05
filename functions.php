@@ -150,7 +150,6 @@ function add_featured_slider(){
                 $featureTitle[$c]['title'] = $post->post_title;
                 $featureTitle[$c]['slug'] = $post->post_name;
                 $c++;
-                echo $featureTitle[$c]['title'];
             } ?>
             <!-- Captions for Orbit -->
             <?php foreach ($featureTitle as $title) { ?>
@@ -161,3 +160,21 @@ function add_featured_slider(){
     
     }
 }
+
+function my_post_image_html( $html, $post_id, $post_image_id ) {
+    if (in_category('featured')) {
+        $custom = get_post_custom($post_id);
+        $html = '<a href="' . $custom['link-post-to-page'][0] . '" title="' . esc_attr( get_post_field( 'post_title', $post_id ) ) . '" data-caption="#'.esc_attr( get_post_field( 'post_name', $post_id ) ).'">' . $html . '</a>';
+    } else {
+        $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_post_field( 'post_title', $post_id ) ) . '" data-caption="#'.esc_attr( get_post_field( 'post_name', $post_id ) ).'">' . $html . '</a>';
+    }
+    return $html;
+}
+add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
+
+function remove_thumbnail_dimensions( $html ) {
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    return $html;
+}
+add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 );
+add_filter( 'image_send_to_editor', 'remove_thumbnail_dimensions', 10 );
