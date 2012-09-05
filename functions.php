@@ -108,6 +108,15 @@ function peace107_scripts() {
 	if ( is_singular() && wp_attachment_is_image( $post->ID ) ) {
 		wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
+    if ( is_home() || is_front_page() ) {
+        wp_enqueue_script( 'foundation3', get_stylesheet_directory_uri() . '/libs/foundation3/javascripts/modernizr.foundation.js', array('jquery') );
+
+        wp_enqueue_script( 'orbit', get_stylesheet_directory_uri() . '/libs/foundation3/javascripts/jquery.orbit-1.4.0.js', array('jquery', 'foundation3') );
+        
+        wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/libs/foundation3/stylesheets/foundation.css', array(), '1.2.3' );
+        
+        wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'), false, true);
+    }
 }
 add_action( 'wp_enqueue_scripts', 'peace107_scripts' );
 
@@ -115,3 +124,32 @@ add_action( 'wp_enqueue_scripts', 'peace107_scripts' );
  * Implement the Custom Header feature
  */
 require( get_template_directory() . '/inc/custom-header.php' );
+
+function add_featured_slider(){
+    if(is_home() && !is_paged()) { ?>
+        <!-- featured -->
+        <div id="featured">
+            <?php
+            $idObj = get_category_by_slug('featured'); 
+            $catID = $idObj->term_id;
+            $args = array('category' => $catID);
+            $featured_posts = get_posts($args);
+            $c = 0;
+            foreach( $featured_posts as $post ) {
+                if ( has_post_thumbnail($post->ID)) {
+                    echo get_the_post_thumbnail($post->ID);
+                }
+                $featureTitle[$c]['title'] = $post->post_title;
+                $featureTitle[$c]['slug'] = $post->post_name;
+                $c++;
+                echo $featureTitle[$c]['title'];
+            } ?>
+            <!-- Captions for Orbit -->
+            <?php foreach ($featureTitle as $title) { ?>
+                <span class="orbit-caption" id="<?php echo $title['slug']; ?>"><?php echo $title['title']; ?></span>
+            <?php } ?>
+        </div><!-- /featured -->
+    <?php } else {
+    
+    }
+}
