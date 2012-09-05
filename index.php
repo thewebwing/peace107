@@ -16,6 +16,7 @@ get_header(); ?>
 
     <div id="primary" class="site-content container">
         <div id="content" role="main">
+        <?php add_featured_slider(); ?>
 
         <?php if ( have_posts() ) : ?>
 
@@ -44,10 +45,11 @@ get_header(); ?>
 
         </div><!-- #content -->
         <aside class="aside1">
-            <div class="ad medium-rectangle"><a href=""><img src="" width="300" height="250"></a></div>
+            <?php get_sidebar(); ?>
+            <div class="ad medium-rectangle"><a href=""><img src="http://brazosvalleybride.com/assets/300x250.gif" width="300" height="250"></a></div>
         </aside>
         <aside class="aside2">
-            An aside.
+            An Aside.
         </aside>
         <footer class="footer1">
             A footer.
