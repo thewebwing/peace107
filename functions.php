@@ -178,3 +178,7 @@ function remove_thumbnail_dimensions( $html ) {
 }
 add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 );
 add_filter( 'image_send_to_editor', 'remove_thumbnail_dimensions', 10 );
+
+function phantom_image_spacer() {
+    echo '<img style="height:0" height="" width="1000" src="'.get_stylesheet_directory_uri().'/style/images/phantom.gif">';
+}
