@@ -35,8 +35,7 @@ function peace107_custom_header_setup() {
 	$args = array(
 		'default-image'          => '',
 		'default-text-color'     => '000',
-		'width'                  => 300,
-		'height'                 => 250,
+		'width'                  => 400,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'peace107_header_style',
 		'admin-head-callback'    => 'peace107_admin_header_style',
