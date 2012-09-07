@@ -11,7 +11,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -42,14 +42,12 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+<body <?php body_class('cf'); ?>>
+<div id="page" class="hfeed site cf">
 	<?php do_action( 'before' ); ?>
-    <?php if(!wp_is_mobile()){ ?>
         <div class="ad leaderboard"><a href=""><img src="http://brazosvalleybride.com/assets/728x90.gif" width="728" height="90"></a></div>
-    <?php } ?>
 	<header id="masthead" class="site-header" role="banner">
-        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+        <a href="<?php echo site_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
 		<hgroup>
 			<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
@@ -63,4 +61,4 @@
 		</nav><!-- .site-navigation .main-navigation -->
 	</header><!-- #masthead .site-header -->
 
-	<div id="main">
+	<div id="main" class="cf">
