@@ -2,19 +2,45 @@
 @import "compass/typography";
 @import "compass/utilities";
 @import "compass/layout";
+@import "compass/support";
 @import "zen";// Import Zen Grids with this statement.
+
 $zen-column-count: 16; // Set the total number of columns in the grid.
 $zen-gutter-width: 10px; // Set the gutter size. A half-gutter is used on each side of each column.
-body { background-color:#ddd; }
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+body.blog { background-color:#7ea5d9; font-family: Verdana, sans-serif;}
+h1 { font-size:2.0em; }
 #page, .container, .aside1, .content, .aside2, .footer1, .footer2 {
     float:none;
     width:100%;
 }
-#page { min-width:740px; background-color:#fff;}
-#masthead {
-    background: url('images/header-bg.jpg') #fff center center no-repeat;
+#page {
+    min-width:740px; background: #7ea5d9 center top no-repeat url('images/header-bg.jpg');
+    background-size:100% auto;
+    @include experimental(box-shadow, 0 0 1.5em );
 }
-footer#colophon { clear:both; }
+#main { background-color:#fff; }
+#masthead {}
+#masthead img {padding:0 1.5em .5em;}
+#content {
+    @include experimental(box-shadow, 0 1.5em 1.5em #DDD);
+}
+footer#colophon {
+    clear:both;
+    z-index:10;
+    position:relative;
+    background-color:#fff;
+    min-height:150px;
+    padding-bottom:2.0em;
+}
 /* Commented out to disable mobile sizing */
 /*#content {
     clear:both;
@@ -70,7 +96,7 @@ footer#colophon { clear:both; }
     border:2px solid #888;
     padding:2px;
     margin:0 auto;
-    box-sizing:content-box;
+    @include experimental(box-sizing, content-box);
 }
 .leaderboard {
     width:728px;
@@ -92,8 +118,9 @@ footer#colophon { clear:both; }
     border-top:6px solid #1f3d72;
     width:100%;
     overflow:hidden;
-    font-family:Georgia, serif;
-    height: 45px;
+    font-size: 2.5em;
+    font-variant: small-caps;
+    letter-spacing: .1em;
 }
 .menu-main-container ul {
     float:left;
@@ -116,7 +143,7 @@ footer#colophon { clear:both; }
 .menu-main-container ul li a {
     display:block;
     float:left;
-    margin:0 1px 0 0;
+    margin:0 1px 10px 0;
     padding:10px 10px 6px 10px;
     background:#1f3d72;
     text-decoration:none;
@@ -126,6 +153,7 @@ footer#colophon { clear:both; }
 .main-navigation li.current-menu-item a,
 .menu-main-container ul li a:hover {
     padding:15px 10px 6px 10px;
+    margin-bottom:5px
 }
 .menu-main-container ul li.active a,
 .menu-main-container ul li.active a:hover {
@@ -140,8 +168,7 @@ footer#colophon { clear:both; }
 #featured.orbit { background: none; }
 #featured.orbit img { display: block; }
 
-@media only screen and (min-width: 625px ) and ( max-width: 1000px )    {
-    .aside1, .aside2 { border-left:1px solid #ccc; }
+@media only screen and (min-width: 625px ) and ( max-width: 1050px )    {
     #page {
         margin:0 auto;
     }
@@ -173,7 +200,7 @@ footer#colophon { clear:both; }
     }
     
 }
-@media only screen and (min-width: 1000px ) {
+@media only screen and (min-width: 1050px ) {
     #page {
         max-width:1200px;
         margin:0 auto;
@@ -181,6 +208,7 @@ footer#colophon { clear:both; }
     #masthead {
         //padding:.5em 1em;
     }
+    #masthead img {padding:2.0em 1.5em .5em;}
     .container {
         @include zen-grid-container; // Apply this mixin to the container.
     }
