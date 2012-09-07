@@ -93,7 +93,11 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</div><!-- #content -->
+            <aside class="aside1">
+                <?php dynamic_sidebar('Primary'); ?>
+            </aside>
+            <aside class="aside2">
+                <?php dynamic_sidebar('Secondary'); ?>
+            </aside>
 		</section><!-- #primary .site-content -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
