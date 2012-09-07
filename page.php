@@ -31,11 +31,5 @@ get_header(); ?>
         <aside class="aside2">
             <?php dynamic_sidebar('Secondary'); ?>
         </aside>
-        <footer class="footer1">
-            A footer.
-        </footer>
-        <footer class="footer2">
-            Another footer.
-        </footer>
     </div><!-- #primary .site-content -->
 <?php get_footer(); ?>

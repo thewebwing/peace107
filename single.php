@@ -13,8 +13,6 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php peace107_content_nav( 'nav-above' ); ?>
-
 				<?php get_template_part( 'content', 'single' ); ?>
 
 				<?php peace107_content_nav( 'nav-below' ); ?>
@@ -28,7 +26,11 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
+            <aside class="aside1">
+                <?php dynamic_sidebar('Primary'); ?>
+            </aside>
+            <aside class="aside2">
+                <?php dynamic_sidebar('Secondary'); ?>
+            </aside>
 		</div><!-- #primary .site-content -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
