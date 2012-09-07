@@ -6,6 +6,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'peace107' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
@@ -22,6 +23,7 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
+    <?php phantom_image_spacer(); ?>
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'peace107' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'peace107' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
