@@ -48,7 +48,7 @@ html {
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 body {
-	background: #fff;
+
 }
 article,
 aside,
@@ -368,7 +368,6 @@ a:active {
 	position: relative;
 }
 .main-navigation a {
-	display: block;
 	text-decoration: none;
 }
 .main-navigation ul ul {
