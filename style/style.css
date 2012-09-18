@@ -1,4 +1,1111 @@
-/* line 11, scss/style.scss */
+/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 28, scss/style.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 36, scss/style.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ * Remove excess height in iOS5 devices
+ */
+/* line 45, scss/style.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+/* line 53, scss/style.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+/* line 65, scss/style.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+/* line 83, scss/style.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+/* line 89, scss/style.scss */
+body {
+  margin: 0;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+/* line 98, scss/style.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+/* line 106, scss/style.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE6/7
+ * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
+ */
+/* line 116, scss/style.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 120, scss/style.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 124, scss/style.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 128, scss/style.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 132, scss/style.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 136, scss/style.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+/* line 143, scss/style.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+/* line 150, scss/style.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 153, scss/style.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+/* line 159, scss/style.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+/* line 165, scss/style.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+/* line 173, scss/style.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+/* line 183, scss/style.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+/* line 191, scss/style.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+/* line 201, scss/style.scss */
+q {
+  quotes: none;
+}
+
+/* 2 */
+/* line 206, scss/style.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 210, scss/style.scss */
+small {
+  font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+/* line 218, scss/style.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 224, scss/style.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 227, scss/style.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE6/7
+ */
+/* line 239, scss/style.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 242, scss/style.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE6/7
+ */
+/* line 250, scss/style.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE7
+ */
+/* line 257, scss/style.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+/* line 269, scss/style.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+/* line 280, scss/style.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+/* line 289, scss/style.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+/* line 298, scss/style.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding
+ */
+/* line 304, scss/style.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+/* line 314, scss/style.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+/* line 334, scss/style.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+/* line 352, scss/style.scss */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+/* line 366, scss/style.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+/* line 381, scss/style.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+/* line 391, scss/style.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+/* line 409, scss/style.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+/* line 423, scss/style.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+/* line 431, scss/style.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+/* line 439, scss/style.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells
+ */
+/* line 453, scss/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * Bootstrap v2.0.4
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+/* line 466, scss/style.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 470, scss/style.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+/* line 474, scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 477, scss/style.scss */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 484, scss/style.scss */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 493, scss/style.scss */
+.btn {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  padding: 4px 10px 4px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 18px;
+  *line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, white, #e6e6e6);
+  background-image: -ms-linear-gradient(top, white, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+  background-image: -o-linear-gradient(top, white, #e6e6e6);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* line 539, scss/style.scss */
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+/* line 544, scss/style.scss */
+.btn:active,
+.btn.active {
+  background-color: #cccccc \9;
+}
+
+/* line 547, scss/style.scss */
+.btn:first-child {
+  *margin-left: 0;
+}
+
+/* line 550, scss/style.scss */
+.btn:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+
+/* line 564, scss/style.scss */
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/* line 570, scss/style.scss */
+.btn.active,
+.btn:active {
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* line 580, scss/style.scss */
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-color: #e6e6e6;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 590, scss/style.scss */
+.btn-large {
+  padding: 9px 14px;
+  font-size: 15px;
+  line-height: normal;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 598, scss/style.scss */
+.btn-large [class^="icon-"] {
+  margin-top: 1px;
+}
+
+/* line 601, scss/style.scss */
+.btn-small {
+  padding: 5px 9px;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+/* line 606, scss/style.scss */
+.btn-small [class^="icon-"] {
+  margin-top: -1px;
+}
+
+/* line 609, scss/style.scss */
+.btn-mini {
+  padding: 2px 6px;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+/* line 625, scss/style.scss */
+.btn-primary,
+.btn-primary:hover,
+.btn-warning,
+.btn-warning:hover,
+.btn-danger,
+.btn-danger:hover,
+.btn-success,
+.btn-success:hover,
+.btn-info,
+.btn-info:hover,
+.btn-inverse,
+.btn-inverse:hover {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 634, scss/style.scss */
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 637, scss/style.scss */
+.btn {
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+/* line 641, scss/style.scss */
+.btn-primary {
+  background-color: #0074cc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0055cc);
+  background-image: -ms-linear-gradient(top, #0088cc, #0055cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0055cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0055cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0055cc);
+  background-image: linear-gradient(top, #0088cc, #0055cc);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0);
+  border-color: #0055cc #0055cc #003580;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0055cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 662, scss/style.scss */
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #0055cc;
+  *background-color: #004ab3;
+}
+
+/* line 667, scss/style.scss */
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #004099 \9;
+}
+
+/* line 670, scss/style.scss */
+.btn-warning {
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -ms-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(top, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fbb450', endColorstr='#f89406', GradientType=0);
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #f89406;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 691, scss/style.scss */
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+
+/* line 696, scss/style.scss */
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #c67605 \9;
+}
+
+/* line 699, scss/style.scss */
+.btn-danger {
+  background-color: #da4f49;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(top, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ee5f5b', endColorstr='#bd362f', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #bd362f;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 720, scss/style.scss */
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+
+/* line 725, scss/style.scss */
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #942a25 \9;
+}
+
+/* line 728, scss/style.scss */
+.btn-success {
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -ms-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(top, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #51a351;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 749, scss/style.scss */
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  background-color: #51a351;
+  *background-color: #499249;
+}
+
+/* line 754, scss/style.scss */
+.btn-success:active,
+.btn-success.active {
+  background-color: #408140 \9;
+}
+
+/* line 757, scss/style.scss */
+.btn-info {
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(top, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2f96b4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 778, scss/style.scss */
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+
+/* line 783, scss/style.scss */
+.btn-info:active,
+.btn-info.active {
+  background-color: #24748c \9;
+}
+
+/* line 786, scss/style.scss */
+.btn-inverse {
+  background-color: #414141;
+  background-image: -moz-linear-gradient(top, #555555, #222222);
+  background-image: -ms-linear-gradient(top, #555555, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#555555), to(#222222));
+  background-image: -webkit-linear-gradient(top, #555555, #222222);
+  background-image: -o-linear-gradient(top, #555555, #222222);
+  background-image: linear-gradient(top, #555555, #222222);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#555555', endColorstr='#222222', GradientType=0);
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #222222;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* line 807, scss/style.scss */
+.btn-inverse:hover,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+  background-color: #222222;
+  *background-color: #151515;
+}
+
+/* line 812, scss/style.scss */
+.btn-inverse:active,
+.btn-inverse.active {
+  background-color: #080808 \9;
+}
+
+/* line 816, scss/style.scss */
+button.btn,
+input[type="submit"].btn {
+  *padding-top: 2px;
+  *padding-bottom: 2px;
+}
+
+/* line 821, scss/style.scss */
+button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 826, scss/style.scss */
+button.btn.btn-large,
+input[type="submit"].btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+
+/* line 831, scss/style.scss */
+button.btn.btn-small,
+input[type="submit"].btn.btn-small {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+
+/* line 836, scss/style.scss */
+button.btn.btn-mini,
+input[type="submit"].btn.btn-mini {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+/* Basic Styling of the Body */
+/* line 842, scss/style.scss */
+body {
+  background: #e0e0e0 url(/demo/responsive-nav/img/background.png);
+  margin: 0 auto;
+  color: black;
+  font-weight: 300 !important;
+  font-size: 10px;
+  position: relative;
+  overflow: auto;
+  max-width: 1300px;
+}
+
+/* line 853, scss/style.scss */
+a:link,
+a:visited {
+  color: #666;
+  text-decoration: underline;
+}
+
+/* line 858, scss/style.scss */
+a:hover,
+a:active {
+  color: #a67b45;
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 863, scss/style.scss */
+a:active {
+  color: #ff6000;
+}
+
+/* Le Header */
+/* line 867, scss/style.scss */
+header {
+  padding: 20px 0;
+  position: relative;
+  /* The common properties in the NAV element */
+  /* Making sure lists have no margin/padding */
+}
+
+/* line 875, scss/style.scss */
+header h1#branding a {
+  font-family: "Euphoria Script", cursive;
+  font-weight: normal;
+}
+
+/* line 880, scss/style.scss */
+header h1#branding a:link,
+header h1#branding a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 885, scss/style.scss */
+header h1#branding a:hover,
+header h1#branding a:active {
+  color: #a67b45;
+  text-decoration: none;
+}
+
+/* line 889, scss/style.scss */
+header h2#tagline {
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #444;
+}
+
+/* line 896, scss/style.scss */
+header nav {
+  background-color: #f8f8f8;
+  background-image: -moz-linear-gradient(top, white, #ededed);
+  background-image: -ms-linear-gradient(top, white, #ededed);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#ededed));
+  background-image: -webkit-linear-gradient(top, white, #ededed);
+  background-image: -o-linear-gradient(top, white, #ededed);
+  background-image: linear-gradient(top, #ffffff, #ededed);
+  background-repeat: repeat-x;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+/* line 911, scss/style.scss */
+header ul#menu {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* The content and footer sections */
+/* line 917, scss/style.scss */
+section.content,
+footer {
+  padding: 10px 20px;
+  background: #FFF;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: left;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 927, scss/style.scss */
+footer {
+  margin: 20px 0;
+}
+
+/* Dimension (or rather, just the Screen Width) display */
+/* line 931, scss/style.scss */
+#dimensions {
+  position: fixed;
+  right: 10px;
+  bottom: 0px;
+  background: #000;
+  font-size: 13px;
+  color: #FFF;
+  padding: 10px;
+}
+
+/* line 944, scss/style.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -7,52 +1114,61 @@
   /* 2 */
 }
 
-/* line 16, scss/style.scss */
+/* line 949, scss/style.scss */
 .cf:after {
   clear: both;
 }
 
-/* line 19, scss/style.scss */
-body.blog {
-  background-color: #7ea5d9;
+/* line 952, scss/style.scss */
+body {
   font-family: Verdana, sans-serif;
+  max-width: none;
+  background-color: #7ea5d9;
 }
 
-/* line 20, scss/style.scss */
+/* line 953, scss/style.scss */
 h1 {
   font-size: 2.0em;
 }
 
-/* line 21, scss/style.scss */
+/* line 954, scss/style.scss */
 #page, .container, .aside1, .content, .aside2, .footer1, .footer2 {
   float: none;
   width: 100%;
 }
 
-/* line 25, scss/style.scss */
+/* line 958, scss/style.scss */
 #page {
-  min-width: 740px;
-  background: #7ea5d9 center top no-repeat url("images/header-bg.jpg");
-  background-size: 100% auto;
+  background: #7ea5d9 right top no-repeat url("images/header-bg.jpg");
+  background-size: 1200;
   -moz-box-shadow: 0 0 1.5em;
   -webkit-box-shadow: 0 0 1.5em;
   -o-box-shadow: 0 0 1.5em;
   -ms-box-shadow: 0 0 1.5em;
   -khtml-box-shadow: 0 0 1.5em;
   box-shadow: 0 0 1.5em;
+  min-width: 320px;
+  margin-top: 40px;
 }
 
-/* line 30, scss/style.scss */
+/* line 965, scss/style.scss */
 #main {
   background-color: #fff;
+  clear: both;
+  padding-top: 15px;
 }
 
-/* line 32, scss/style.scss */
+/* line 967, scss/style.scss */
 #masthead img {
   padding: 0 1.5em .5em;
 }
 
-/* line 33, scss/style.scss */
+/* line 968, scss/style.scss */
+.site-navigation {
+  z-index: 100;
+}
+
+/* line 969, scss/style.scss */
 #content {
   -moz-box-shadow: 0 1.5em 1.5em #dddddd;
   -webkit-box-shadow: 0 1.5em 1.5em #dddddd;
@@ -62,7 +1178,7 @@ h1 {
   box-shadow: 0 1.5em 1.5em #dddddd;
 }
 
-/* line 36, scss/style.scss */
+/* line 972, scss/style.scss */
 footer#colophon {
   clear: both;
   z-index: 10;
@@ -70,6 +1186,7 @@ footer#colophon {
   background-color: #fff;
   min-height: 150px;
   padding-bottom: 2.0em;
+  margin: 0;
 }
 
 /* Commented out to disable mobile sizing */
@@ -90,12 +1207,12 @@ footer#colophon {
     /*background: #CFF; */
 }*/
 /* repeat of 740 - 825 */
-/* line 63, scss/style.scss */
+/* line 1000, scss/style.scss */
 #page {
   margin: 0 auto;
 }
 
-/* line 66, scss/style.scss */
+/* line 1003, scss/style.scss */
 .container {
   *position: relative;
   *zoom: 1;
@@ -110,12 +1227,12 @@ footer#colophon {
   clear: both;
 }
 
-/* line 69, scss/style.scss */
+/* line 1006, scss/style.scss */
 #primary {
   clear: both;
 }
 
-/* line 70, scss/style.scss */
+/* line 1007, scss/style.scss */
 #content {
   float: left;
   width: 56.25%;
@@ -133,7 +1250,7 @@ footer#colophon {
   _overflow-y: visible;
 }
 
-/* line 74, scss/style.scss */
+/* line 1011, scss/style.scss */
 .aside1 {
   clear: right;
   float: right;
@@ -152,7 +1269,7 @@ footer#colophon {
   _overflow-y: visible;
 }
 
-/* line 79, scss/style.scss */
+/* line 1016, scss/style.scss */
 .aside2 {
   clear: right;
   float: right;
@@ -171,7 +1288,7 @@ footer#colophon {
   _overflow-y: visible;
 }
 
-/* line 84, scss/style.scss */
+/* line 1021, scss/style.scss */
 .footer1 {
   clear: left;
   float: left;
@@ -190,7 +1307,7 @@ footer#colophon {
   _overflow-y: visible;
 }
 
-/* line 89, scss/style.scss */
+/* line 1026, scss/style.scss */
 .footer2 {
   float: left;
   width: 50%;
@@ -208,7 +1325,7 @@ footer#colophon {
   _overflow-y: visible;
 }
 
-/* line 95, scss/style.scss */
+/* line 1032, scss/style.scss */
 .ad {
   border: 2px solid #888;
   padding: 2px;
@@ -221,7 +1338,7 @@ footer#colophon {
   box-sizing: content-box;
 }
 
-/* line 101, scss/style.scss */
+/* line 1038, scss/style.scss */
 .leaderboard {
   width: 728px;
   height: 90px;
@@ -229,7 +1346,7 @@ footer#colophon {
   margin-bottom: 10px;
 }
 
-/* line 107, scss/style.scss */
+/* line 1044, scss/style.scss */
 .medium-rectangle {
   width: 300px;
   height: 250px;
@@ -237,100 +1354,334 @@ footer#colophon {
 
 /* -------------------------------------------------- */
 /* talltabs-blue */
-/* -------------------------------------------------- */
-/* line 114, scss/style.scss */
+/* --------------------------------------------------
 .menu-main-container {
-  clear: left;
-  float: left;
-  padding: 0;
-  border-top: 6px solid #1f3d72;
-  width: 100%;
-  overflow: hidden;
-  font-size: 2.5em;
-  font-variant: small-caps;
-  letter-spacing: .1em;
+    clear:left;
+    float:left;
+    padding:0;
+    border-top:6px solid #1f3d72;
+    width:100%;
+    overflow:hidden;
+    font-size: 2.5em;
+    font-variant: small-caps;
+    letter-spacing: .1em;
 }
-
-/* line 125, scss/style.scss */
 .menu-main-container ul {
-  float: left;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  left: 50%;
-  text-align: center;
+    float:left;
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:relative;
+    left:50%;
+    text-align:center;
 }
-
-/* line 134, scss/style.scss */
 .menu-main-container ul li {
-  display: block;
-  float: left;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  right: 50%;
+    display:block;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    right:50%;
 }
-
-/* line 143, scss/style.scss */
 .menu-main-container ul li a {
-  display: block;
-  float: left;
-  margin: 0 1px 10px 0;
-  padding: 10px 10px 6px 10px;
-  background: #1f3d72;
-  text-decoration: none;
-  color: #fff;
+    display:block;
+    float:left;
+    margin:0 1px 10px 0;
+    padding:10px 10px 6px 10px;
+    background:#1f3d72;
+    text-decoration:none;
+    color:#fff;
 }
 
-/* line 154, scss/style.scss */
 .main-navigation li.current-menu-item a,
 .menu-main-container ul li a:hover {
-  padding: 15px 10px 6px 10px;
-  margin-bottom: 5px;
+    padding:15px 10px 6px 10px;
+    margin-bottom:5px
 }
-
-/* line 159, scss/style.scss */
 .menu-main-container ul li.active a,
 .menu-main-container ul li.active a:hover {
-  padding: 40px 10px 6px 10px;
+    padding:40px 10px 6px 10px;
 }
-
+*/
 /* Orbit */
-/* line 164, scss/style.scss */
+/* line 1101, scss/style.scss */
 .orbit-wrapper div.orbit-caption {
   font-size: 1.8em;
 }
 
-/* line 165, scss/style.scss */
+/* line 1102, scss/style.scss */
 #featured {
   background: url(../libs/foundation3/images/foundation/orbit/loading.gif) center center #f4f4f4 no-repeat;
   height: 300px;
 }
 
-/* line 166, scss/style.scss */
+/* line 1103, scss/style.scss */
 #featured img {
   display: none;
 }
 
-/* line 168, scss/style.scss */
+/* line 1105, scss/style.scss */
 #featured.orbit {
   background: none;
 }
 
-/* line 169, scss/style.scss */
+/* line 1106, scss/style.scss */
 #featured.orbit img {
   display: block;
 }
 
-@media only screen and (min-width: 625px ) and ( max-width: 1050px ) {
-  /* line 172, scss/style.scss */
-  #page {
-    margin: 0 auto;
+@media only screen and (min-width: 0px ) and ( max-width: 1024px ) {
+  /***********************
+       mobile-nav.css
+   ***********************/
+  /* The NAV element in mobile devices */
+  /* line 1114, scss/style.scss */
+  header nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    zoom: 1;
+    width: auto;
+    text-align: left;
+    height: 40px;
+    width: 100%;
   }
 
-  /* line 175, scss/style.scss */
+  /* The button on the top-right */
+  /* line 1126, scss/style.scss */
+  nav .btn-navbar {
+    position: relative;
+    right: 10px;
+    top: 6px;
+    float: right;
+    padding: 7px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+  }
+
+  /* line 1138, scss/style.scss */
+  nav .btn-navbar:active {
+    background-color: #e6e6e6;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d9d9d9), to(white));
+    background-image: -webkit-linear-gradient(top, white, #d9d9d9);
+    background-color: #d9d9d9;
+    background-image: -moz-linear-gradient(top, #d9d9d9, white);
+    background-image: -ms-linear-gradient(top, #d9d9d9, white);
+    background-image: -o-linear-gradient(top, #d9d9d9, white);
+    background-image: linear-gradient(top, #d9d9d9, #ffffff);
+    background-repeat: repeat-x;
+  }
+
+  /* line 1149, scss/style.scss */
+  nav .btn-navbar .icon-bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #000;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  /* line 1161, scss/style.scss */
+  nav .btn-navbar.active .icon-bar {
+    background-color: #a67b45;
+    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  /* line 1167, scss/style.scss */
+  .btn-navbar .icon-bar + .icon-bar {
+    margin-top: 3px;
+  }
+
+  /* Using the touch scrolling on capable devices. */
+  /* line 1171, scss/style.scss */
+  .overthrow-enabled .overthrow {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* The unordered list with the menu */
+  /* line 1176, scss/style.scss */
+  ul#menu {
+    background: #000;
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    font-size: 15px !important;
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  /* line 1190, scss/style.scss */
+  ul#menu li {
+    display: block;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #ededed;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(top, white, #ededed);
+    background-image: -ms-linear-gradient(top, white, #ededed);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #ededed));
+    background-image: -webkit-linear-gradient(top, white, #ededed);
+    background-image: -o-linear-gradient(top, white, #ededed);
+    background-image: linear-gradient(top, #ffffff, #ededed);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+  }
+
+  /* line 1205, scss/style.scss */
+  ul#menu li:last-child {
+    border: none;
+  }
+
+  /* line 1208, scss/style.scss */
+  ul#menu li.hasChildren {
+    height: auto !important;
+  }
+
+  /* line 1211, scss/style.scss */
+  ul#menu li.hasChildren ul {
+    display: none;
+    margin: 0 !important;
+    padding: 0 0 0 20px !important;
+  }
+
+  /* line 1216, scss/style.scss */
+  ul#menu li.hasChildren ul li {
+    background: none;
+  }
+
+  /* line 1219, scss/style.scss */
+  ul#menu li a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 10px;
+    font-weight: normal;
+  }
+
+  /* line 1225, scss/style.scss */
+  ul#menu li a span {
+    display: block;
+  }
+
+  /* line 1229, scss/style.scss */
+  ul#menu li a:link,
+  ul#menu li a:visited {
+    color: #666;
+    text-decoration: none;
+    outline: none;
+  }
+
+  /* line 1235, scss/style.scss */
+  ul#menu li a:hover,
+  ul#menu li a:active {
+    color: #a67b45;
+    text-decoration: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  /* line 1241, scss/style.scss */
+  ul#menu li.hasChildren a > span {
+    background: url(../img/sprite.png);
+    background-position: right -97px !important;
+    background-repeat: no-repeat;
+  }
+
+  /* line 1247, scss/style.scss */
+  ul#menu li.hasChildren a:hover > span,
+  ul#menu li.hasChildren.hover > a span {
+    background-position: right -138px !important;
+  }
+
+  /* mobile-nav.css */
+  /* line 1252, scss/style.scss */
+  .logged-in .main-navigation {
+    top: 28px;
+  }
+
+  /* line 1255, scss/style.scss */
+  #masthead {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 320px ) and ( max-width: 767px ) {
+  /***********************
+       smartphone.css
+   ***********************/
+  /* line 1263, scss/style.scss */
+  header span#branding {
+    z-index: 1000;
+    text-align: center;
+    display: block;
+  }
+
+  /* line 1272, scss/style.scss */
+  header h2#tagline {
+    font-size: 2em;
+    line-height: 1.5em;
+    margin: 40px 0 0 0;
+  }
+
+  /* line 1277, scss/style.scss */
+  section.content p {
+    line-height: 2em;
+  }
+
+  /* smartphone.css */
+}
+@media only screen and (min-width: 481px ) and ( max-width: 767px ) {
+  /***********************
+       ipad.css
+   ***********************/
+  /* line 1289, scss/style.scss */
+  header h2#tagline {
+    font-size: 1.7em;
+    margin: 15px 0 5px 0;
+  }
+
+  /* ipad.css */
+}
+@media only screen and (min-width: 481px ) and ( max-width: 767px ) {
+  /***********************
+       tablet.css
+   ***********************/
+  /* line 1303, scss/style.scss */
+  header h2#tagline {
+    font-size: 1.7em;
+    margin: 15px 0 5px 0;
+  }
+
+  /* line 1307, scss/style.scss */
+  section.content p {
+    line-height: 1.8em;
+  }
+
+  /* tablet.css */
+}
+@media only screen and (min-width: 0px ) and ( max-width: 625px ) {
+  /* line 1313, scss/style.scss */
+  #page {
+    margin: 40px auto 0;
+  }
+
+  /* line 1316, scss/style.scss */
   .container {
     *position: relative;
     *zoom: 1;
@@ -345,7 +1696,131 @@ footer#colophon {
     clear: both;
   }
 
-  /* line 178, scss/style.scss */
+  /* line 1319, scss/style.scss */
+  #content {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    overflow: auto;
+  }
+
+  /* line 1323, scss/style.scss */
+  .aside1 {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 1327, scss/style.scss */
+  .aside2 {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 1331, scss/style.scss */
+  .footer1 {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 1335, scss/style.scss */
+  .footer2 {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+
+  /* line 1338, scss/style.scss */
+  .leaderboard {
+    width: 320px;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: #ccc;
+  }
+}
+@media only screen and (min-width: 625px ) and ( max-width: 1024px ) {
+  /* line 1348, scss/style.scss */
+  #page {
+    margin: 40px auto 0;
+  }
+
+  /* line 1351, scss/style.scss */
+  .container {
+    *position: relative;
+    *zoom: 1;
+  }
+  /* line 52, scss/zen/_grids.scss */
+  .container:before, .container:after {
+    content: "";
+    display: table;
+  }
+  /* line 56, scss/zen/_grids.scss */
+  .container:after {
+    clear: both;
+  }
+
+  /* line 1354, scss/style.scss */
   #content {
     float: left;
     width: 56.25%;
@@ -363,7 +1838,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 182, scss/style.scss */
+  /* line 1358, scss/style.scss */
   .aside1 {
     clear: right;
     float: right;
@@ -382,7 +1857,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 187, scss/style.scss */
+  /* line 1363, scss/style.scss */
   .aside2 {
     clear: right;
     float: right;
@@ -401,7 +1876,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 192, scss/style.scss */
+  /* line 1368, scss/style.scss */
   .footer1 {
     clear: left;
     float: left;
@@ -420,7 +1895,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 197, scss/style.scss */
+  /* line 1373, scss/style.scss */
   .footer2 {
     float: left;
     width: 50%;
@@ -438,19 +1913,277 @@ footer#colophon {
     _overflow-y: visible;
   }
 }
-@media only screen and (min-width: 1050px ) {
-  /* line 204, scss/style.scss */
+@media only screen and (min-width: 1025px ) {
+  /***********************
+       desktop.css
+   ***********************/
+  /*
+   * Bulletproof CSS3 Dropdown Navigation Menu
+   * This snippet of code is freely modifiable and distributable.
+   *
+   * ----------------------------------------------------------------- */
+  /* line 1390, scss/style.scss */
+  html {
+    overflow: auto;
+  }
+
+  /* line 1393, scss/style.scss */
+  .btn-navbar {
+    display: none;
+  }
+
+  /* line 1396, scss/style.scss */
+  header {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* line 1400, scss/style.scss */
+  header span#branding {
+    margin: 10px 0 0 0;
+  }
+
+  /* line 1403, scss/style.scss */
+  header h2#tagline {
+    font-size: 1.7em;
+    margin: 15px 0 5px 0;
+  }
+
+  /* line 1411, scss/style.scss */
+  nav {
+    *zoom: 1;
+    margin: 0 auto;
+    width: auto;
+    text-align: left;
+  }
+
+  /* line 1418, scss/style.scss */
+  nav:before,
+  nav:after {
+    display: table;
+    content: "";
+  }
+
+  /* line 1422, scss/style.scss */
+  nav:after {
+    clear: both;
+  }
+
+  /* line 1425, scss/style.scss */
+  nav ul {
+    float: left;
+    *zoom: 1;
+    width: auto;
+    z-index: 100;
+    font-size: 15px;
+    border-right: 1px solid #e8e8e8;
+  }
+
+  /* line 1434, scss/style.scss */
+  nav ul:before,
+  nav ul:after {
+    display: table;
+    content: "";
+  }
+
+  /* line 1438, scss/style.scss */
+  nav ul:after {
+    clear: both;
+  }
+
+  /* line 1441, scss/style.scss */
+  nav ul li {
+    float: left;
+    padding: 0 0 10px 0;
+    position: relative;
+    outline: none;
+    line-height: 1.2em;
+    padding: 0 1px 0 0;
+    border-left: 1px solid #e8e8e8;
+    list-style: none;
+  }
+
+  /* line 1451, scss/style.scss */
+  nav ul li.hasChildren a span {
+    padding: 0 20px 0 0;
+    background: url(/demo/responsive-nav/img/sprite.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  /* line 1459, scss/style.scss */
+  nav ul li.hasChildren a:hover span,
+  nav ul li.hasChildren.hover a span {
+    background-position: right -50px;
+  }
+
+  /* line 1462, scss/style.scss */
+  nav ul a {
+    padding: 15px 20px 15px 20px;
+    font-weight: normal;
+    float: left;
+    display: block;
+    zoom: 1;
+  }
+
+  /* line 1470, scss/style.scss */
+  nav ul a:link,
+  nav ul a:visited {
+    color: #666;
+    text-decoration: none;
+    background-color: #f8f8f8;
+    background-image: -moz-linear-gradient(top, white, #ededed);
+    background-image: -ms-linear-gradient(top, white, #ededed);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#ededed));
+    background-image: -webkit-linear-gradient(top, white, #ededed);
+    background-image: -o-linear-gradient(top, white, #ededed);
+    background-image: linear-gradient(top, #ffffff, #ededed);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+
+  /* line 1490, scss/style.scss */
+  nav ul a:hover,
+  nav ul a:active {
+    color: #a67b45;
+    text-decoration: none;
+    background-color: #f4f4f4;
+    background-image: -moz-linear-gradient(top, #ededed, white);
+    background-image: -ms-linear-gradient(top, #ededed, white);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ededed), to(white));
+    background-image: -webkit-linear-gradient(top, #ededed, white);
+    background-image: -o-linear-gradient(top, #ededed, white);
+    background-image: linear-gradient(top, #ededed, #ffffff);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff', GradientType=0);
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    outline: none;
+  }
+
+  /* line 1509, scss/style.scss */
+  nav ul a:active {
+    -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
+  }
+
+  /* line 1514, scss/style.scss */
+  #menu li:hover > ul {
+    display: block;
+  }
+
+  /* line 1517, scss/style.scss */
+  #menu li:hover > a {
+    color: #a67b45;
+  }
+
+  /* line 1520, scss/style.scss */
+  nav li ul {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 46px;
+    left: 0px;
+    width: 130px;
+    border: none !important;
+    padding: 2px;
+    background: #999;
+    z-index: 1000;
+    *zoom: 1;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 1537, scss/style.scss */
+  nav li ul:before,
+  nav li ul:after {
+    display: table;
+    content: "";
+  }
+
+  /* line 1541, scss/style.scss */
+  nav li ul:after {
+    clear: both;
+  }
+
+  /* line 1544, scss/style.scss */
+  nav li ul a {
+    float: none;
+  }
+
+  /* line 1547, scss/style.scss */
+  nav li ul li {
+    width: 130px;
+    display: block;
+    border-top: 1px solid #cfcfcf;
+    border-left: none !important;
+  }
+
+  /* line 1553, scss/style.scss */
+  nav li ul li.hasChildren a > span {
+    background: url(/demo/responsive-nav/img/sprite.png);
+    background-position: right -97px !important;
+    background-repeat: no-repeat;
+  }
+
+  /* line 1559, scss/style.scss */
+  nav li ul li.hasChildren a:hover > span,
+  nav li ul li.hasChildren.hover > a span {
+    background-position: right -138px !important;
+  }
+
+  /* line 1562, scss/style.scss */
+  .rgba nav li > ul {
+    padding: 10px;
+    left: -10px;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  /* line 1570, scss/style.scss */
+  nav li ul li ul {
+    display: none;
+    left: 130px !important;
+    top: -3px;
+  }
+
+  /* line 1575, scss/style.scss */
+  .rgba nav li ul li ul {
+    top: -10px;
+  }
+
+  /* line 1578, scss/style.scss */
+  .rgba nav li > ul {
+    margin-top: -1px;
+  }
+
+  /* desktop.css */
+  /* line 1583, scss/style.scss */
   #page {
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  /* line 211, scss/style.scss */
+  /* line 1590, scss/style.scss */
   #masthead img {
     padding: 2.0em 1.5em .5em;
   }
 
-  /* line 212, scss/style.scss */
+  /* line 1591, scss/style.scss */
   .container {
     *position: relative;
     *zoom: 1;
@@ -465,7 +2198,7 @@ footer#colophon {
     clear: both;
   }
 
-  /* line 215, scss/style.scss */
+  /* line 1594, scss/style.scss */
   #content {
     float: left;
     width: 50%;
@@ -483,7 +2216,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 219, scss/style.scss */
+  /* line 1598, scss/style.scss */
   .aside1 {
     float: left;
     width: 31.25%;
@@ -501,7 +2234,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 223, scss/style.scss */
+  /* line 1602, scss/style.scss */
   .aside2 {
     float: left;
     width: 18.75%;
@@ -519,7 +2252,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 227, scss/style.scss */
+  /* line 1606, scss/style.scss */
   .footer1 {
     clear: left;
     float: left;
@@ -538,7 +2271,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 232, scss/style.scss */
+  /* line 1611, scss/style.scss */
   .footer2 {
     float: left;
     width: 50%;
