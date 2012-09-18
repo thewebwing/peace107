@@ -40,6 +40,24 @@
 <![endif]-->
 
 <?php wp_head(); ?>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	
+	<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width">
+	
+
+	
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="wp-content/themes/peace107/style/desktop.css" media="screen">
+	<![endif]-->
+		
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="wp-content/themes/peace107/js/selectivizr-1.0.3.min.js"></script>
+	<![endif]-->
+	
+	<meta http-equiv="cleartype" content="on">
 </head>
 
 <body <?php body_class('cf'); ?>>
@@ -47,7 +65,7 @@
 	<?php do_action( 'before' ); ?>
         <div class="ad leaderboard"><a href=""><img src="http://brazosvalleybride.com/assets/728x90.gif" width="728" height="90"></a></div>
 	<header id="masthead" class="site-header" role="banner">
-        <a href="<?php echo site_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a>
+        <span id="branding"><a href="<?php echo site_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a></span>
 		<hgroup>
 			<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
@@ -56,8 +74,18 @@
 		<nav role="navigation" class="site-navigation main-navigation">
 			<h1 class="assistive-text"><?php _e( 'Menu', 'peace107' ); ?></h1>
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'peace107' ); ?>"><?php _e( 'Skip to content', 'peace107' ); ?></a></div>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            
+            <a class="btn btn-navbar" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+			<?php $args = array(
+                'theme_location' => 'primary',
+                'menu_id'         => 'overthrow',
+                'menu_id'         => 'menu',
+            );
+            wp_nav_menu( $args ); ?>
 		</nav><!-- .site-navigation .main-navigation -->
 	</header><!-- #masthead .site-header -->
 
