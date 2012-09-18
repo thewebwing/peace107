@@ -104,10 +104,18 @@ add_action( 'widgets_init', 'peace107_widgets_init' );
  */
 function peace107_scripts() {
 	global $post;
-
+    
+    wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/libs/foundation3/stylesheets/foundation.css', array(), '1.2.3' );
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
+	//wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
+    //wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '201200917', true );
+    //wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '201200917', true );
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '201200917', true );
+    wp_enqueue_script( 'helper', get_template_directory_uri() . '/js/helper.js', array( 'jquery' ), '201200917', true );
+    wp_enqueue_script( 'plugins', get_template_directory_uri() . '/js/plugins.js', array( 'jquery' ), '201200917', true );
+    wp_enqueue_script( 'modernizr', get_stylesheet_directory_uri() . '/libs/foundation3/javascripts/modernizr.foundation.js', array('jquery') );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -117,11 +125,8 @@ function peace107_scripts() {
 		wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
     if ( is_home() || is_front_page() ) {
-        wp_enqueue_script( 'foundation3', get_stylesheet_directory_uri() . '/libs/foundation3/javascripts/modernizr.foundation.js', array('jquery') );
 
-        wp_enqueue_script( 'orbit', get_stylesheet_directory_uri() . '/libs/foundation3/javascripts/jquery.orbit-1.4.0.js', array('jquery', 'foundation3') );
-        
-        wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/libs/foundation3/stylesheets/foundation.css', array(), '1.2.3' );
+        wp_enqueue_script( 'orbit', get_stylesheet_directory_uri() . '/libs/foundation3/javascripts/jquery.orbit-1.4.0.js', array('jquery', 'modernizr') );
         
         wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'), false, true);
     }
