@@ -7,6 +7,11 @@
  */
 
 /**
+ * BuddyPress Functions
+ */
+include('bbp-functions.php'); 
+ 
+/**
  * Set the content width based on the theme's design and stylesheet.
  *
  * @since Peace 107 1.0
