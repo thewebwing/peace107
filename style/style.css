@@ -1803,9 +1803,10 @@ footer#colophon {
   /* line 1348, scss/style.scss */
   #page {
     margin: 40px auto 0;
+    min-width: 735px;
   }
 
-  /* line 1351, scss/style.scss */
+  /* line 1352, scss/style.scss */
   .container {
     *position: relative;
     *zoom: 1;
@@ -1820,7 +1821,7 @@ footer#colophon {
     clear: both;
   }
 
-  /* line 1354, scss/style.scss */
+  /* line 1355, scss/style.scss */
   #content {
     float: left;
     width: 56.25%;
@@ -1838,7 +1839,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 1358, scss/style.scss */
+  /* line 1359, scss/style.scss */
   .aside1 {
     clear: right;
     float: right;
@@ -1857,7 +1858,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 1363, scss/style.scss */
+  /* line 1364, scss/style.scss */
   .aside2 {
     clear: right;
     float: right;
@@ -1876,7 +1877,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 1368, scss/style.scss */
+  /* line 1369, scss/style.scss */
   .footer1 {
     clear: left;
     float: left;
@@ -1895,7 +1896,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 1373, scss/style.scss */
+  /* line 1374, scss/style.scss */
   .footer2 {
     float: left;
     width: 50%;
@@ -1922,34 +1923,34 @@ footer#colophon {
    * This snippet of code is freely modifiable and distributable.
    *
    * ----------------------------------------------------------------- */
-  /* line 1390, scss/style.scss */
+  /* line 1391, scss/style.scss */
   html {
     overflow: auto;
   }
 
-  /* line 1393, scss/style.scss */
+  /* line 1394, scss/style.scss */
   .btn-navbar {
     display: none;
   }
 
-  /* line 1396, scss/style.scss */
+  /* line 1397, scss/style.scss */
   header {
     margin: 0 auto;
     padding: 0;
   }
 
-  /* line 1400, scss/style.scss */
+  /* line 1401, scss/style.scss */
   header span#branding {
     margin: 10px 0 0 0;
   }
 
-  /* line 1403, scss/style.scss */
+  /* line 1404, scss/style.scss */
   header h2#tagline {
     font-size: 1.7em;
     margin: 15px 0 5px 0;
   }
 
-  /* line 1411, scss/style.scss */
+  /* line 1412, scss/style.scss */
   nav {
     *zoom: 1;
     margin: 0 auto;
@@ -1957,19 +1958,19 @@ footer#colophon {
     text-align: left;
   }
 
-  /* line 1418, scss/style.scss */
+  /* line 1419, scss/style.scss */
   nav:before,
   nav:after {
     display: table;
     content: "";
   }
 
-  /* line 1422, scss/style.scss */
+  /* line 1423, scss/style.scss */
   nav:after {
     clear: both;
   }
 
-  /* line 1425, scss/style.scss */
+  /* line 1426, scss/style.scss */
   nav ul {
     float: left;
     *zoom: 1;
@@ -1979,19 +1980,19 @@ footer#colophon {
     border-right: 1px solid #e8e8e8;
   }
 
-  /* line 1434, scss/style.scss */
+  /* line 1435, scss/style.scss */
   nav ul:before,
   nav ul:after {
     display: table;
     content: "";
   }
 
-  /* line 1438, scss/style.scss */
+  /* line 1439, scss/style.scss */
   nav ul:after {
     clear: both;
   }
 
-  /* line 1441, scss/style.scss */
+  /* line 1442, scss/style.scss */
   nav ul li {
     float: left;
     padding: 0 0 10px 0;
@@ -2003,7 +2004,7 @@ footer#colophon {
     list-style: none;
   }
 
-  /* line 1451, scss/style.scss */
+  /* line 1452, scss/style.scss */
   nav ul li.hasChildren a span {
     padding: 0 20px 0 0;
     background: url(/demo/responsive-nav/img/sprite.png);
@@ -2012,13 +2013,13 @@ footer#colophon {
     display: block;
   }
 
-  /* line 1459, scss/style.scss */
+  /* line 1460, scss/style.scss */
   nav ul li.hasChildren a:hover span,
   nav ul li.hasChildren.hover a span {
     background-position: right -50px;
   }
 
-  /* line 1462, scss/style.scss */
+  /* line 1463, scss/style.scss */
   nav ul a {
     padding: 15px 20px 15px 20px;
     font-weight: normal;
@@ -2027,7 +2028,7 @@ footer#colophon {
     zoom: 1;
   }
 
-  /* line 1470, scss/style.scss */
+  /* line 1471, scss/style.scss */
   nav ul a:link,
   nav ul a:visited {
     color: #666;
@@ -2049,7 +2050,7 @@ footer#colophon {
     outline: none;
   }
 
-  /* line 1490, scss/style.scss */
+  /* line 1491, scss/style.scss */
   nav ul a:hover,
   nav ul a:active {
     color: #a67b45;
@@ -2071,24 +2072,24 @@ footer#colophon {
     outline: none;
   }
 
-  /* line 1509, scss/style.scss */
+  /* line 1510, scss/style.scss */
   nav ul a:active {
     -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
     -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
   }
 
-  /* line 1514, scss/style.scss */
+  /* line 1515, scss/style.scss */
   #menu li:hover > ul {
     display: block;
   }
 
-  /* line 1517, scss/style.scss */
+  /* line 1518, scss/style.scss */
   #menu li:hover > a {
     color: #a67b45;
   }
 
-  /* line 1520, scss/style.scss */
+  /* line 1521, scss/style.scss */
   nav li ul {
     display: none;
     margin: 0;
@@ -2106,24 +2107,24 @@ footer#colophon {
     box-shadow: none;
   }
 
-  /* line 1537, scss/style.scss */
+  /* line 1538, scss/style.scss */
   nav li ul:before,
   nav li ul:after {
     display: table;
     content: "";
   }
 
-  /* line 1541, scss/style.scss */
+  /* line 1542, scss/style.scss */
   nav li ul:after {
     clear: both;
   }
 
-  /* line 1544, scss/style.scss */
+  /* line 1545, scss/style.scss */
   nav li ul a {
     float: none;
   }
 
-  /* line 1547, scss/style.scss */
+  /* line 1548, scss/style.scss */
   nav li ul li {
     width: 130px;
     display: block;
@@ -2131,20 +2132,20 @@ footer#colophon {
     border-left: none !important;
   }
 
-  /* line 1553, scss/style.scss */
+  /* line 1554, scss/style.scss */
   nav li ul li.hasChildren a > span {
     background: url(/demo/responsive-nav/img/sprite.png);
     background-position: right -97px !important;
     background-repeat: no-repeat;
   }
 
-  /* line 1559, scss/style.scss */
+  /* line 1560, scss/style.scss */
   nav li ul li.hasChildren a:hover > span,
   nav li ul li.hasChildren.hover > a span {
     background-position: right -138px !important;
   }
 
-  /* line 1562, scss/style.scss */
+  /* line 1563, scss/style.scss */
   .rgba nav li > ul {
     padding: 10px;
     left: -10px;
@@ -2154,36 +2155,36 @@ footer#colophon {
     border-radius: 10px;
   }
 
-  /* line 1570, scss/style.scss */
+  /* line 1571, scss/style.scss */
   nav li ul li ul {
     display: none;
     left: 130px !important;
     top: -3px;
   }
 
-  /* line 1575, scss/style.scss */
+  /* line 1576, scss/style.scss */
   .rgba nav li ul li ul {
     top: -10px;
   }
 
-  /* line 1578, scss/style.scss */
+  /* line 1579, scss/style.scss */
   .rgba nav li > ul {
     margin-top: -1px;
   }
 
   /* desktop.css */
-  /* line 1583, scss/style.scss */
+  /* line 1584, scss/style.scss */
   #page {
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  /* line 1590, scss/style.scss */
+  /* line 1591, scss/style.scss */
   #masthead img {
     padding: 2.0em 1.5em .5em;
   }
 
-  /* line 1591, scss/style.scss */
+  /* line 1592, scss/style.scss */
   .container {
     *position: relative;
     *zoom: 1;
@@ -2198,7 +2199,7 @@ footer#colophon {
     clear: both;
   }
 
-  /* line 1594, scss/style.scss */
+  /* line 1595, scss/style.scss */
   #content {
     float: left;
     width: 50%;
@@ -2216,7 +2217,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 1598, scss/style.scss */
+  /* line 1599, scss/style.scss */
   .aside1 {
     float: left;
     width: 31.25%;
@@ -2234,7 +2235,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 1602, scss/style.scss */
+  /* line 1603, scss/style.scss */
   .aside2 {
     float: left;
     width: 18.75%;
@@ -2252,7 +2253,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 1606, scss/style.scss */
+  /* line 1607, scss/style.scss */
   .footer1 {
     clear: left;
     float: left;
@@ -2271,7 +2272,7 @@ footer#colophon {
     _overflow-y: visible;
   }
 
-  /* line 1611, scss/style.scss */
+  /* line 1612, scss/style.scss */
   .footer2 {
     float: left;
     width: 50%;

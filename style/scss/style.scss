@@ -1347,6 +1347,7 @@ footer#colophon {
 @media only screen and (min-width: 625px ) and ( max-width: 1024px )    {
     #page {
         margin:40px auto 0;
+        min-width:735px;
     }
     .container {
         @include zen-grid-container; // Apply this mixin to the container.
