@@ -13,10 +13,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php do_action( 'peace107_credits' ); ?>
-			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'peace107' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'peace107' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'peace107' ), 'peace107', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+			 &copy; Copyright 2012 <a href="http://bryanbroadcasting.com">Bryan Broadcasting Corporation</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon .site-footer -->
 </div><!-- #page .hfeed .site -->
