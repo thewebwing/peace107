@@ -51,7 +51,7 @@
 
 	
 	<!--[if lt IE 9]>
-	<link rel="stylesheet" href="wp-content/themes/peace107/style/ie-fix.css" media="screen">
+	<link rel="stylesheet" href="http://peace107.com/wp-content/themes/peace107/style/ie-fix.css" media="screen">
 	<![endif]-->
 		
 	<!--[if (lt IE 9) & (!IEMobile)]>
