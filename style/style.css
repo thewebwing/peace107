@@ -1445,234 +1445,12 @@ aside .textwidget img {
   display: block;
 }
 
-/* line 1113, scss/style.scss */
-nav {
-  *zoom: 1;
-  margin: 0 auto;
-  width: auto;
-  text-align: left;
-}
-
-/* line 1120, scss/style.scss */
-nav:before,
-nav:after {
-  display: table;
-  content: "";
-}
-
-/* line 1124, scss/style.scss */
-nav:after {
-  clear: both;
-}
-
-/* line 1127, scss/style.scss */
-nav ul {
-  float: left;
-  *zoom: 1;
-  width: auto;
-  z-index: 100;
-  font-size: 15px;
-  border-right: 1px solid #e8e8e8;
-}
-
-/* line 1136, scss/style.scss */
-nav ul:before,
-nav ul:after {
-  display: table;
-  content: "";
-}
-
-/* line 1140, scss/style.scss */
-nav ul:after {
-  clear: both;
-}
-
-/* line 1143, scss/style.scss */
-nav ul li {
-  float: left;
-  padding: 0 0 10px 0;
-  position: relative;
-  outline: none;
-  line-height: 1.2em;
-  padding: 0 1px 0 0;
-  border-left: 1px solid #e8e8e8;
-  list-style: none;
-}
-
-/* line 1153, scss/style.scss */
-nav ul li.hasChildren a span {
-  padding: 0 20px 0 0;
-  background: url(/demo/responsive-nav/img/sprite.png);
-  background-position: right top;
-  background-repeat: no-repeat;
-  display: block;
-}
-
-/* line 1161, scss/style.scss */
-nav ul li.hasChildren a:hover span,
-nav ul li.hasChildren.hover a span {
-  background-position: right -50px;
-}
-
-/* line 1164, scss/style.scss */
-nav ul a {
-  padding: 15px 20px 15px 20px;
-  font-weight: normal;
-  float: left;
-  display: block;
-  zoom: 1;
-}
-
-/* line 1172, scss/style.scss */
-nav ul a:link,
-nav ul a:visited {
-  color: #666;
-  text-decoration: none;
-  background-color: #f8f8f8;
-  background-image: -moz-linear-gradient(top, white, #ededed);
-  background-image: -ms-linear-gradient(top, white, #ededed);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#ededed));
-  background-image: -webkit-linear-gradient(top, white, #ededed);
-  background-image: -o-linear-gradient(top, white, #ededed);
-  background-image: linear-gradient(top, #ffffff, #ededed);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  outline: none;
-}
-
-/* line 1192, scss/style.scss */
-nav ul a:hover,
-nav ul a:active {
-  color: #a67b45;
-  text-decoration: none;
-  background-color: #f4f4f4;
-  background-image: -moz-linear-gradient(top, #ededed, white);
-  background-image: -ms-linear-gradient(top, #ededed, white);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ededed), to(white));
-  background-image: -webkit-linear-gradient(top, #ededed, white);
-  background-image: -o-linear-gradient(top, #ededed, white);
-  background-image: linear-gradient(top, #ededed, #ffffff);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff', GradientType=0);
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  -ms-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-  outline: none;
-}
-
-/* line 1211, scss/style.scss */
-nav ul a:active {
-  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
-  -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
-  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
-}
-
-/* line 1216, scss/style.scss */
-#menu li:hover > ul {
-  display: block;
-}
-
-/* line 1219, scss/style.scss */
-#menu li:hover > a {
-  color: #a67b45;
-}
-
-/* line 1222, scss/style.scss */
-nav li ul {
-  display: none;
-  margin: 0;
-  position: absolute;
-  top: 46px;
-  left: 0px;
-  width: 130px;
-  border: none !important;
-  padding: 2px;
-  background: #999;
-  z-index: 1000;
-  *zoom: 1;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-/* line 1239, scss/style.scss */
-nav li ul:before,
-nav li ul:after {
-  display: table;
-  content: "";
-}
-
-/* line 1243, scss/style.scss */
-nav li ul:after {
-  clear: both;
-}
-
-/* line 1246, scss/style.scss */
-nav li ul a {
-  float: none;
-}
-
-/* line 1249, scss/style.scss */
-nav li ul li {
-  width: 130px;
-  display: block;
-  border-top: 1px solid #cfcfcf;
-  border-left: none !important;
-}
-
-/* line 1255, scss/style.scss */
-nav li ul li.hasChildren a > span {
-  background: url(/demo/responsive-nav/img/sprite.png);
-  background-position: right -97px !important;
-  background-repeat: no-repeat;
-}
-
-/* line 1261, scss/style.scss */
-nav li ul li.hasChildren a:hover > span,
-nav li ul li.hasChildren.hover > a span {
-  background-position: right -138px !important;
-}
-
-/* line 1264, scss/style.scss */
-.rgba nav li > ul {
-  padding: 10px;
-  left: -10px;
-  background: rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
-
-/* line 1272, scss/style.scss */
-nav li ul li ul {
-  display: none;
-  left: 130px !important;
-  top: -3px;
-}
-
-/* line 1277, scss/style.scss */
-.rgba nav li ul li ul {
-  top: -10px;
-}
-
-/* line 1280, scss/style.scss */
-.rgba nav li > ul {
-  margin-top: -1px;
-}
-
 @media only screen and (min-width: 0px ) and ( max-width: 1024px ) {
   /***********************
        mobile-nav.css
    ***********************/
   /* The NAV element in mobile devices */
-  /* line 1290, scss/style.scss */
+  /* line 1119, scss/style.scss */
   header nav {
     display: block;
     position: fixed;
@@ -1686,7 +1464,7 @@ nav li ul li ul {
   }
 
   /* The button on the top-right */
-  /* line 1302, scss/style.scss */
+  /* line 1131, scss/style.scss */
   nav .btn-navbar {
     position: relative;
     right: 10px;
@@ -1700,7 +1478,7 @@ nav li ul li ul {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
   }
 
-  /* line 1314, scss/style.scss */
+  /* line 1143, scss/style.scss */
   nav .btn-navbar:active {
     background-color: #e6e6e6;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d9d9d9), to(white));
@@ -1713,7 +1491,7 @@ nav li ul li ul {
     background-repeat: repeat-x;
   }
 
-  /* line 1325, scss/style.scss */
+  /* line 1154, scss/style.scss */
   nav .btn-navbar .icon-bar {
     display: block;
     width: 18px;
@@ -1727,7 +1505,7 @@ nav li ul li ul {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   }
 
-  /* line 1337, scss/style.scss */
+  /* line 1166, scss/style.scss */
   nav .btn-navbar.active .icon-bar {
     background-color: #a67b45;
     -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
@@ -1735,20 +1513,20 @@ nav li ul li ul {
     box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   }
 
-  /* line 1343, scss/style.scss */
+  /* line 1172, scss/style.scss */
   .btn-navbar .icon-bar + .icon-bar {
     margin-top: 3px;
   }
 
   /* Using the touch scrolling on capable devices. */
-  /* line 1347, scss/style.scss */
+  /* line 1176, scss/style.scss */
   .overthrow-enabled .overthrow {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
   }
 
   /* The unordered list with the menu */
-  /* line 1352, scss/style.scss */
+  /* line 1181, scss/style.scss */
   ul#menu {
     background: #000;
     display: none;
@@ -1764,7 +1542,7 @@ nav li ul li ul {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   }
 
-  /* line 1366, scss/style.scss */
+  /* line 1195, scss/style.scss */
   ul#menu li {
     display: block;
     height: 40px;
@@ -1781,29 +1559,29 @@ nav li ul li ul {
     filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
   }
 
-  /* line 1381, scss/style.scss */
+  /* line 1210, scss/style.scss */
   ul#menu li:last-child {
     border: none;
   }
 
-  /* line 1384, scss/style.scss */
+  /* line 1213, scss/style.scss */
   ul#menu li.hasChildren {
     height: auto !important;
   }
 
-  /* line 1387, scss/style.scss */
+  /* line 1216, scss/style.scss */
   ul#menu li.hasChildren ul {
     display: none;
     margin: 0 !important;
     padding: 0 0 0 20px !important;
   }
 
-  /* line 1392, scss/style.scss */
+  /* line 1221, scss/style.scss */
   ul#menu li.hasChildren ul li {
     background: none;
   }
 
-  /* line 1395, scss/style.scss */
+  /* line 1224, scss/style.scss */
   ul#menu li a {
     display: block;
     text-decoration: none;
@@ -1811,12 +1589,12 @@ nav li ul li ul {
     font-weight: normal;
   }
 
-  /* line 1401, scss/style.scss */
+  /* line 1230, scss/style.scss */
   ul#menu li a span {
     display: block;
   }
 
-  /* line 1405, scss/style.scss */
+  /* line 1234, scss/style.scss */
   ul#menu li a:link,
   ul#menu li a:visited {
     color: #666;
@@ -1824,7 +1602,7 @@ nav li ul li ul {
     outline: none;
   }
 
-  /* line 1411, scss/style.scss */
+  /* line 1240, scss/style.scss */
   ul#menu li a:hover,
   ul#menu li a:active {
     color: #a67b45;
@@ -1833,31 +1611,31 @@ nav li ul li ul {
     background: rgba(0, 0, 0, 0.05);
   }
 
-  /* line 1417, scss/style.scss */
+  /* line 1246, scss/style.scss */
   ul#menu li.hasChildren a > span {
     background: url(../img/sprite.png);
     background-position: right -97px !important;
     background-repeat: no-repeat;
   }
 
-  /* line 1423, scss/style.scss */
+  /* line 1252, scss/style.scss */
   ul#menu li.hasChildren a:hover > span,
   ul#menu li.hasChildren.hover > a span {
     background-position: right -138px !important;
   }
 
   /* mobile-nav.css */
-  /* line 1428, scss/style.scss */
+  /* line 1257, scss/style.scss */
   .logged-in .main-navigation {
     top: 28px;
   }
 
-  /* line 1431, scss/style.scss */
+  /* line 1260, scss/style.scss */
   #masthead {
     padding: 0;
   }
 
-  /* line 1432, scss/style.scss */
+  /* line 1261, scss/style.scss */
   #primary aside, #secondary aside, #primary aside.widget .ad, #secondary aside.widget .ad {
     padding-right: 0;
     padding-left: 0;
@@ -1867,21 +1645,21 @@ nav li ul li ul {
   /***********************
        smartphone.css
    ***********************/
-  /* line 1443, scss/style.scss */
+  /* line 1272, scss/style.scss */
   header span#branding {
     z-index: 1000;
     text-align: center;
     display: block;
   }
 
-  /* line 1452, scss/style.scss */
+  /* line 1281, scss/style.scss */
   header h2#tagline {
     font-size: 2em;
     line-height: 1.5em;
     margin: 40px 0 0 0;
   }
 
-  /* line 1457, scss/style.scss */
+  /* line 1286, scss/style.scss */
   section.content p {
     line-height: 2em;
   }
@@ -1892,7 +1670,7 @@ nav li ul li ul {
   /***********************
        ipad.css
    ***********************/
-  /* line 1469, scss/style.scss */
+  /* line 1298, scss/style.scss */
   header h2#tagline {
     font-size: 1.7em;
     margin: 15px 0 5px 0;
@@ -1904,13 +1682,13 @@ nav li ul li ul {
   /***********************
        tablet.css
    ***********************/
-  /* line 1483, scss/style.scss */
+  /* line 1312, scss/style.scss */
   header h2#tagline {
     font-size: 1.7em;
     margin: 15px 0 5px 0;
   }
 
-  /* line 1487, scss/style.scss */
+  /* line 1316, scss/style.scss */
   section.content p {
     line-height: 1.8em;
   }
@@ -1918,13 +1696,13 @@ nav li ul li ul {
   /* tablet.css */
 }
 @media only screen and (min-width: 0px ) and ( max-width: 625px ) {
-  /* line 1493, scss/style.scss */
+  /* line 1322, scss/style.scss */
   #page {
     margin: 40px auto 0;
     min-width: 320px;
   }
 
-  /* line 1497, scss/style.scss */
+  /* line 1326, scss/style.scss */
   .container {
     *position: relative;
     *zoom: 1;
@@ -1939,7 +1717,7 @@ nav li ul li ul {
     clear: both;
   }
 
-  /* line 1500, scss/style.scss */
+  /* line 1329, scss/style.scss */
   #content {
     float: left;
     width: 100%;
@@ -1958,7 +1736,7 @@ nav li ul li ul {
     overflow: auto;
   }
 
-  /* line 1504, scss/style.scss */
+  /* line 1333, scss/style.scss */
   .aside1 {
     clear: left;
     float: left;
@@ -1977,7 +1755,7 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1508, scss/style.scss */
+  /* line 1337, scss/style.scss */
   .aside2 {
     clear: left;
     float: left;
@@ -1996,7 +1774,7 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1512, scss/style.scss */
+  /* line 1341, scss/style.scss */
   .footer1 {
     clear: left;
     float: left;
@@ -2015,7 +1793,7 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1516, scss/style.scss */
+  /* line 1345, scss/style.scss */
   .footer2 {
     float: left;
     width: 100%;
@@ -2033,12 +1811,12 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1519, scss/style.scss */
+  /* line 1348, scss/style.scss */
   .ad {
     border: none;
   }
 
-  /* line 1520, scss/style.scss */
+  /* line 1349, scss/style.scss */
   .leaderboard {
     width: 320px;
     height: 50px;
@@ -2047,7 +1825,7 @@ nav li ul li ul {
     background-position: 0 -90px;
   }
 
-  /* line 1527, scss/style.scss */
+  /* line 1356, scss/style.scss */
   .medium-rectangle {
     width: 320px;
     height: 50px;
@@ -2057,13 +1835,13 @@ nav li ul li ul {
   }
 }
 @media only screen and (min-width: 625px ) and ( max-width: 1024px ) {
-  /* line 1537, scss/style.scss */
+  /* line 1366, scss/style.scss */
   #page {
     margin: 40px auto 0;
     min-width: 735px;
   }
 
-  /* line 1541, scss/style.scss */
+  /* line 1370, scss/style.scss */
   .container {
     *position: relative;
     *zoom: 1;
@@ -2078,7 +1856,7 @@ nav li ul li ul {
     clear: both;
   }
 
-  /* line 1544, scss/style.scss */
+  /* line 1373, scss/style.scss */
   #content {
     float: left;
     width: 56.25%;
@@ -2096,7 +1874,7 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1548, scss/style.scss */
+  /* line 1377, scss/style.scss */
   .aside1 {
     clear: right;
     float: right;
@@ -2115,7 +1893,7 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1553, scss/style.scss */
+  /* line 1382, scss/style.scss */
   .aside2 {
     clear: right;
     float: right;
@@ -2134,7 +1912,7 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1558, scss/style.scss */
+  /* line 1387, scss/style.scss */
   .footer1 {
     clear: left;
     float: left;
@@ -2153,7 +1931,7 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1563, scss/style.scss */
+  /* line 1392, scss/style.scss */
   .footer2 {
     float: left;
     width: 50%;
@@ -2180,34 +1958,34 @@ nav li ul li ul {
    * This snippet of code is freely modifiable and distributable.
    *
    * ----------------------------------------------------------------- */
-  /* line 1580, scss/style.scss */
+  /* line 1409, scss/style.scss */
   html {
     overflow: auto;
   }
 
-  /* line 1583, scss/style.scss */
+  /* line 1412, scss/style.scss */
   .btn-navbar {
     display: none;
   }
 
-  /* line 1586, scss/style.scss */
+  /* line 1415, scss/style.scss */
   header {
     margin: 0 auto;
     padding: 0;
   }
 
-  /* line 1590, scss/style.scss */
+  /* line 1419, scss/style.scss */
   header span#branding {
     margin: 10px 0 0 0;
   }
 
-  /* line 1593, scss/style.scss */
+  /* line 1422, scss/style.scss */
   header h2#tagline {
     font-size: 1.7em;
     margin: 15px 0 5px 0;
   }
 
-  /* line 1601, scss/style.scss */
+  /* line 1430, scss/style.scss */
   nav {
     *zoom: 1;
     margin: 0 auto;
@@ -2215,19 +1993,19 @@ nav li ul li ul {
     text-align: left;
   }
 
-  /* line 1608, scss/style.scss */
+  /* line 1437, scss/style.scss */
   nav:before,
   nav:after {
     display: table;
     content: "";
   }
 
-  /* line 1612, scss/style.scss */
+  /* line 1441, scss/style.scss */
   nav:after {
     clear: both;
   }
 
-  /* line 1615, scss/style.scss */
+  /* line 1444, scss/style.scss */
   nav ul {
     float: left;
     *zoom: 1;
@@ -2237,19 +2015,19 @@ nav li ul li ul {
     border-right: 1px solid #e8e8e8;
   }
 
-  /* line 1624, scss/style.scss */
+  /* line 1453, scss/style.scss */
   nav ul:before,
   nav ul:after {
     display: table;
     content: "";
   }
 
-  /* line 1628, scss/style.scss */
+  /* line 1457, scss/style.scss */
   nav ul:after {
     clear: both;
   }
 
-  /* line 1631, scss/style.scss */
+  /* line 1460, scss/style.scss */
   nav ul li {
     float: left;
     padding: 0 0 10px 0;
@@ -2261,7 +2039,7 @@ nav li ul li ul {
     list-style: none;
   }
 
-  /* line 1641, scss/style.scss */
+  /* line 1470, scss/style.scss */
   nav ul li.hasChildren a span {
     padding: 0 20px 0 0;
     background: url(/demo/responsive-nav/img/sprite.png);
@@ -2270,13 +2048,13 @@ nav li ul li ul {
     display: block;
   }
 
-  /* line 1649, scss/style.scss */
+  /* line 1478, scss/style.scss */
   nav ul li.hasChildren a:hover span,
   nav ul li.hasChildren.hover a span {
     background-position: right -50px;
   }
 
-  /* line 1652, scss/style.scss */
+  /* line 1481, scss/style.scss */
   nav ul a {
     padding: 15px 20px 15px 20px;
     font-weight: normal;
@@ -2285,7 +2063,7 @@ nav li ul li ul {
     zoom: 1;
   }
 
-  /* line 1660, scss/style.scss */
+  /* line 1489, scss/style.scss */
   nav ul a:link,
   nav ul a:visited {
     color: #666;
@@ -2307,7 +2085,7 @@ nav li ul li ul {
     outline: none;
   }
 
-  /* line 1680, scss/style.scss */
+  /* line 1509, scss/style.scss */
   nav ul a:hover,
   nav ul a:active {
     color: #a67b45;
@@ -2329,24 +2107,24 @@ nav li ul li ul {
     outline: none;
   }
 
-  /* line 1699, scss/style.scss */
+  /* line 1528, scss/style.scss */
   nav ul a:active {
     -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
     -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
   }
 
-  /* line 1704, scss/style.scss */
+  /* line 1533, scss/style.scss */
   #menu li:hover > ul {
     display: block;
   }
 
-  /* line 1707, scss/style.scss */
+  /* line 1536, scss/style.scss */
   #menu li:hover > a {
     color: #a67b45;
   }
 
-  /* line 1710, scss/style.scss */
+  /* line 1539, scss/style.scss */
   nav li ul {
     display: none;
     margin: 0;
@@ -2364,24 +2142,24 @@ nav li ul li ul {
     box-shadow: none;
   }
 
-  /* line 1727, scss/style.scss */
+  /* line 1556, scss/style.scss */
   nav li ul:before,
   nav li ul:after {
     display: table;
     content: "";
   }
 
-  /* line 1731, scss/style.scss */
+  /* line 1560, scss/style.scss */
   nav li ul:after {
     clear: both;
   }
 
-  /* line 1734, scss/style.scss */
+  /* line 1563, scss/style.scss */
   nav li ul a {
     float: none;
   }
 
-  /* line 1737, scss/style.scss */
+  /* line 1566, scss/style.scss */
   nav li ul li {
     width: 130px;
     display: block;
@@ -2389,20 +2167,20 @@ nav li ul li ul {
     border-left: none !important;
   }
 
-  /* line 1743, scss/style.scss */
+  /* line 1572, scss/style.scss */
   nav li ul li.hasChildren a > span {
     background: url(/demo/responsive-nav/img/sprite.png);
     background-position: right -97px !important;
     background-repeat: no-repeat;
   }
 
-  /* line 1749, scss/style.scss */
+  /* line 1578, scss/style.scss */
   nav li ul li.hasChildren a:hover > span,
   nav li ul li.hasChildren.hover > a span {
     background-position: right -138px !important;
   }
 
-  /* line 1752, scss/style.scss */
+  /* line 1581, scss/style.scss */
   .rgba nav li > ul {
     padding: 10px;
     left: -10px;
@@ -2412,36 +2190,36 @@ nav li ul li ul {
     border-radius: 10px;
   }
 
-  /* line 1760, scss/style.scss */
+  /* line 1589, scss/style.scss */
   nav li ul li ul {
     display: none;
     left: 130px !important;
     top: -3px;
   }
 
-  /* line 1765, scss/style.scss */
+  /* line 1594, scss/style.scss */
   .rgba nav li ul li ul {
     top: -10px;
   }
 
-  /* line 1768, scss/style.scss */
+  /* line 1597, scss/style.scss */
   .rgba nav li > ul {
     margin-top: -1px;
   }
 
   /* desktop.css */
-  /* line 1773, scss/style.scss */
+  /* line 1602, scss/style.scss */
   #page {
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  /* line 1780, scss/style.scss */
+  /* line 1609, scss/style.scss */
   #masthead img {
     padding: 2.0em 1.5em .5em;
   }
 
-  /* line 1781, scss/style.scss */
+  /* line 1610, scss/style.scss */
   .container {
     *position: relative;
     *zoom: 1;
@@ -2456,7 +2234,7 @@ nav li ul li ul {
     clear: both;
   }
 
-  /* line 1784, scss/style.scss */
+  /* line 1613, scss/style.scss */
   #content {
     float: left;
     width: 50%;
@@ -2476,7 +2254,7 @@ nav li ul li ul {
     padding-left: 0.75em;
   }
 
-  /* line 1790, scss/style.scss */
+  /* line 1619, scss/style.scss */
   .aside1 {
     float: left;
     width: 31.25%;
@@ -2494,7 +2272,7 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1794, scss/style.scss */
+  /* line 1623, scss/style.scss */
   .aside2 {
     float: left;
     width: 18.75%;
@@ -2512,7 +2290,7 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1798, scss/style.scss */
+  /* line 1627, scss/style.scss */
   .footer1 {
     clear: left;
     float: left;
@@ -2531,7 +2309,7 @@ nav li ul li ul {
     _overflow-y: visible;
   }
 
-  /* line 1803, scss/style.scss */
+  /* line 1632, scss/style.scss */
   .footer2 {
     float: left;
     width: 50%;
