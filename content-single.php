@@ -8,10 +8,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
-
+        <?php if ( get_post_type() != 'ai1ec_event') { ?>
 		<div class="entry-meta">
 			<?php peace107_posted_on(); ?>
 		</div><!-- .entry-meta -->
+        <?php } ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -19,6 +20,7 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'peace107' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 
+    <?php if ( get_post_type() != 'ai1ec_event') { ?>
 	<footer class="entry-meta">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
@@ -56,4 +58,5 @@
 
 		<?php edit_post_link( __( 'Edit', 'peace107' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
+    <?php } ?>
 </article><!-- #post-<?php the_ID(); ?> -->

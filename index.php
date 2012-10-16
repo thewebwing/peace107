@@ -35,7 +35,7 @@ get_header(); ?>
 
             <?php endwhile; ?>
 
-            <?php peace107_content_nav( 'nav-below' ); ?>
+            <?php //peace107_content_nav( 'nav-below' ); ?>
 
         <?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
 

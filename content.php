@@ -23,12 +23,13 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-    <?php phantom_image_spacer(); ?>
+    <?php //phantom_image_spacer(); ?>
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'peace107' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'peace107' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
+    <?php if ( !is_home()) { ?>
 	<footer class="entry-meta">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
@@ -60,4 +61,5 @@
 
 		<?php edit_post_link( __( 'Edit', 'peace107' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
+    <?php } ?>
 </article><!-- #post-<?php the_ID(); ?> -->
