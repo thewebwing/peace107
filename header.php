@@ -62,9 +62,37 @@
 </head>
 
 <body <?php body_class('cf'); ?>>
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/9199055/Peace_main_ATF_header_728x90', [728, 90], 'div-gpt-ad-1350502431820-0').addService(googletag.pubads());
+googletag.defineSlot('/9199055/Peace_main_ATF_sidebar_300x250', [300, 250], 'div-gpt-ad-1350502431820-1').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
 <div id="page" class="hfeed site cf">
 	<?php do_action( 'before' ); ?>
-        <div class="ad leaderboard"><a href="http://www.st-joseph.org/body.cfm?id=361" target="_blank"><img class="phantom" src="http://peace107.com/wp-content/themes/peace107/style/images/phantom.gif"></a></div>
+        <div class="ad leaderboard"><!-- Peace_main_ATF_header_728x90 -->
+            <div id='div-gpt-ad-1350502431820-0' style='width:728px; height:90px;'>
+            <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1350502431820-0'); });
+            </script></div>
+        </div>
 	<header id="masthead" class="site-header" role="banner">
         <span id="branding"><a href="<?php echo site_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></a></span>
 		<hgroup>
