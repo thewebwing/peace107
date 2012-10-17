@@ -840,7 +840,6 @@ input[type="submit"].btn.btn-mini {
 
 /* Basic Styling of the Body */
 body {
-  background: #e0e0e0 url(/demo/responsive-nav/img/background.png);
   margin: 0 auto;
   color: black;
   font-weight: 300 !important;
@@ -1032,20 +1031,20 @@ footer#colophon {
     border:2px solid #888;
     margin:0 auto;
     @include experimental(box-sizing, content-box);
+    z-index:1000;
 }
 .leaderboard {
-    width:728px;
-    height:90px;
-    margin-top:5px;
-    margin-bottom:10px;
-    background: url('http://peace107.com/wp-content/uploads/ads/st-joseph-brazos-valley-sports-medicine-brazos-football-sprite.jpg') left top no-repeat;
-    background-position: 0 0;
-}
+        width:320px;
+        height:50px;
+        margin-top:5px;
+        margin-bottom:10px;
+    }
 .medium-rectangle {
-    width:300px;
-    height:250px;
-    background: url('http://peace107.com/wp-content/uploads/ads/string-and-horn-shop-brazos-football-sprite.jpg') left top no-repeat;
-    background-position: 0 0;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left:0;
 }
 .phantom { width:100%; height:100%; }
 /* -------------------------------------------------- */
@@ -1264,7 +1263,6 @@ aside .textwidget img { margin: 0 auto; display: block; }
     }
 }
 
-
 @media only screen and (min-width: 320px ) and ( max-width: 767px )    {
     /***********************
          smartphone.css
@@ -1287,6 +1285,7 @@ aside .textwidget img { margin: 0 auto; display: block; }
       line-height: 2em;
     }
     /* smartphone.css */
+
 }
 
 @media only screen and (min-width: 481px ) and ( max-width: 767px )    {
@@ -1317,6 +1316,12 @@ aside .textwidget img { margin: 0 auto; display: block; }
       line-height: 1.8em;
     }
     /* tablet.css */
+    .leaderboard {
+        width:468px;
+        height:60px;
+        margin-top:5px;
+        margin-bottom:10px;
+    }
 }
 @media only screen and (min-width: 0px ) and ( max-width: 625px )    {
     #page {
@@ -1346,20 +1351,6 @@ aside .textwidget img { margin: 0 auto; display: block; }
         @include zen-grid-item(16, 1);
     }
     .ad { border:none; }
-    .leaderboard {
-        width:320px;
-        height:50px;
-        margin-top:5px;
-        margin-bottom:10px;
-        background-position: 0 -90px;
-    }
-    .medium-rectangle {
-        width:320px;
-        height:50px;
-        margin-top:5px;
-        margin-bottom:10px;
-        background-position: 0 -250px;
-    }
 }
 
 @media only screen and (min-width: 625px ) and ( max-width: 1024px )    {
@@ -1393,7 +1384,18 @@ aside .textwidget img { margin: 0 auto; display: block; }
         @include zen-grid-item(8, 1);
         //background: #CFF;
     }
-    
+    .medium-rectangle {
+        width: 300px;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+    }
+    .leaderboard {
+        width:728px;
+        height:90px;
+        margin-top:5px;
+        margin-bottom:10px;
+    }
 }
 @media only screen and (min-width: 1025px ) {
 
@@ -1632,6 +1634,18 @@ aside .textwidget img { margin: 0 auto; display: block; }
     .footer2 {
         @include zen-grid-item(8, 1);
         //background: #CFF;
+    }
+    .medium-rectangle {
+        width: 300px;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+    }
+        .leaderboard {
+        width:728px;
+        height:90px;
+        margin-top:5px;
+        margin-bottom:10px;
     }
     
 }

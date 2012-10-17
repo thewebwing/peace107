@@ -231,3 +231,11 @@ nav li ul li ul {
 .rgba nav li > ul {
   margin-top: -1px;
 }
+
+/* line 181, scss/ie-fix.scss */
+.medium-rectangle {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
